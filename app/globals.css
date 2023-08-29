@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray-dark: #484a57;
+  --gray-light: #e9e9e9;
+}
+
+@layer base {
+  body {
+    @apply bg-grayLight text-grayDark;
+  }
+}
+
+.Menu-link:hover .icon {
+  opacity: 0;
+}
+
+.Menu-link:hover .hoverIcon {
+  opacity: 1;
+}
+
+.Menu-link:hover .circle-bg {
+  opacity: 1;
+  transform: scale(1.25);
+  transform-origin: center;
+}
+
+.Menu-link:hover > a {
+  background-color: var(--gray-dark);
+}
+
+.Menu-link:hover .hoverIcon .menu-hover-dot {
+  transform: translate(0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-hover-dot-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.Menu-link:hover .hoverIcon .menu-hover-dot-container {
+  animation: rotating 8s linear infinite 0.25s;
+}
+
+.Menu-link:hover .hoverIcon .menu-hover-dot-container .menu-hover-dot {
+  animation: pulsatingDots 2s linear infinite 0.2s;
+}
+
+.menu-hover-dot {
+  background-color: #484a57;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/*  backgrounds */
+.background-content-1 {
+  background-image: url("/images/bg/1/1.png"), url("/images/bg/1/2.png"),
+    url("/images/bg/1/3.png");
+  background-position:
+    bottom left,
+    20rem 100%,
+    top right;
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-attachment: fixed;
+}
+
+.background-content-2 {
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-image: url("/images/bg/2/1.png");
+  background-position: top right;
+}
+
+.background-content-3 {
+  background-repeat: no-repeat;
+  background-size: 13rem;
+  background-image: url("/images/bg/3/1.png");
+  background-position: top right;
+}
+
+.bg-blur {
+  background: url("/images/radio/bg-blur.png");
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  background-position: -20%;
+}
+
+.radio-1 .card {
+  position: relative;
+  overflow: hidden;
+}
+.radio-1 .card.animated > img {
+  transition: transform 0.3s ease-in-out;
+}
+.radio-1 .card:hover.animated > img {
+  transform: translateY(-2rem) scale(1.25);
+}
+
+.radio-users-icon {
+  animation: pulsatingUsersIcon 3s infinite;
+}
+
+.left-circle-dot-1 {
+  /* background: rgba(0, 0, 0, 0.8); */
+  height: 127%;
+  width: 126%;
+  top: 32%;
+  left: -45%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(-25deg);
+  border-radius: 50%;
+  animation: rotatingDot1 3s linear infinite;
+}
+
+.left-circle-dot-2 {
+  /* background: rgba(0,0,0,0.8); */
+  height: 127%;
+  width: 126%;
+  top: 32%;
+  left: -45%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  animation: rotatingDot2 6s linear infinite;
+}
+
+.left-circle-dot-2-1 {
+  /* background: rgba(0,0,0,0.8); */
+  height: 127%;
+  width: 126%;
+  top: 32%;
+  left: -45%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  animation: rotatingDot2-1 7s linear infinite;
+}
+
+.left-circle-dot-3 {
+  /* background: rgba(0,0,0,0.8); */
+  height: 127%;
+  width: 126%;
+  top: 32%;
+  left: -45%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(99deg);
+  border-radius: 50%;
+  animation: rotatingDot3 3s linear infinite;
+}
+
+/* .player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+@keyframes rotatingDot1 {
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes rotatingDot2 {
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotatingDot2-1 {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotatingDot3 {
+  50% {
+    transform: rotate(130deg);
+  }
+  100% {
+    transform: rotate(99deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulsatingDots {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px black;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsatingUsersIcon {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.2) translate(-50%, -50%);
+    box-shadow: 5px 5px 5px black;
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
