@@ -15,7 +15,7 @@ function Menu (): React.JSX.Element {
       <main className='min-h-screen flex md:items-center justify-center max-w-2xl m-auto'>
         <div className='w-full'>
           <div>
-            <h1 className='relative my-4 mx-auto text-center w-full max-w-xl h-20'>
+            <h1 className='relative my-4 mx-auto text-center w-full max-w-xl h-16'>
               <Image src='/images/logo.svg' alt='' fill />
             </h1>
 
