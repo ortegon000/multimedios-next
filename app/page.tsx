@@ -69,13 +69,13 @@ function Home (): React.JSX.Element {
         ></video> */}
 
         <div className='text-white w-full' id='content'>
-          <h1 className='text-7xl mb-10 m-auto text-center hover:font-bold transition-all transform hover:scale-105 w-[420px]'>
+          <h1 className='text-7xl mb-10 m-auto text-center hover:font-bold transition-all transform hover:scale-105 w-full max-w-sm'>
             <Link href='/menu' id='menu-link'>
               <img src='/images/logo_white.svg' />
             </Link>
           </h1>
 
-          <ul className='flex justify-center items-center gap-8 [&>li>img]:h-12 px-4'>
+          <ul className='flex justify-center items-center gap-6 [&>li>img]:h-12 px-4'>
             {menu.map((item, key) => (
               <li key={key}>
                 <img src={item.image} />
