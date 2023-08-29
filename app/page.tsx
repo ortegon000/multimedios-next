@@ -75,7 +75,7 @@ function Home (): React.JSX.Element {
             </Link>
           </h1>
 
-          <ul className='flex justify-center items-center gap-8 [&>li>img]:h-14 px-4'>
+          <ul className='flex justify-center items-center gap-8 [&>li>img]:h-12 px-4'>
             {menu.map((item, key) => (
               <li key={key}>
                 <img src={item.image} />
