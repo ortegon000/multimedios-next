@@ -6,13 +6,6 @@ import Button from '../../components/button'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Multimedios - Radio 2',
-  description: 'Presentación multimedios'
-}
-
 export default function RadioD2 (): React.JSX.Element {
   return (
     <ContentLayout section='radio 2'>

@@ -1,7 +1,6 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import Component2 from '../../components/layouts/component2'
-import Zoom from 'react-img-zoom'
 
 const cities = [
   'MONTERREY 6.1',
@@ -63,12 +62,12 @@ function Col1 (): React.JSX.Element {
 function Col2 (): React.JSX.Element {
   return (
     <div className='relative hover:bg-grayLight-50 transition rounded-md cursor-zoom-in flex justify-center'>
-      <Zoom
+      {/* <Zoom
         img='/images/tv/cobertura-map.png'
         zoomScale={1.5}
         width={600}
         height={364}
-      />
+      /> */}
 
       <div className='absolute top-0 right-0'>
         <div className='bg-grayDark text-grayLight rounded-md p-4'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CircleLeft ({ image, className }: {
   image: string;
-  className: string;
+  className?: string;
 }): React.JSX.Element {
   return (
     <div className={`${className} absolute -z-10 bottom-0 left-0`}>

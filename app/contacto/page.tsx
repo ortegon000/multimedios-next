@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Contacto',
