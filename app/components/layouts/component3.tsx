@@ -26,21 +26,24 @@ export default function Component3 ({
 
           {cards.map((card, key) => (
             <div className='rounded-md border mb-4 md:mb-0' key={key}>
-              <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark animate__animated animate__zoomIn'>
-                <img
-                  src={card.icon}
-                  alt=''
-                  className='w-12 object-contain mx-auto'
-                />
-              </span>
+              <div className='flex md:block'>
+                <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark animate__animated animate__zoomIn'>
+                  <img
+                    src={card.icon}
+                    alt=''
+                    className='w-12 object-contain mx-auto'
+                  />
+                </span>
 
-              <p className='my-2 text-center rounded-lg bg-grayDark text-grayLight px-2 py-1 text leading-none'>
-                <span className='font-bold'>{card.title}:</span>
-                <br />
-                <span>{card.subtitle}</span>
-              </p>
+                <p className='w-2/3 md:w-full my-2 text-center rounded-lg bg-grayDark text-grayLight px-2 py-1 text leading-none'>
+                  <span className='font-bold'>{card.title}:</span>
+                  <br />
+                  <span>{card.subtitle}</span>
+                </p>
+              </div>
+
               <ul
-                className={`${card.columns} text-center text-sm leading-tight`}
+                className={`${card.columns} text-center text-sm leading-tight mt-2 mb-4 md:mt-0 md:mb-4`}
               >
                 {card.list.map((item: any, cardKey: any) => (
                   <li key={cardKey}>{item}</li>
