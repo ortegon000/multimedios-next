@@ -14,11 +14,11 @@ export default function Component1 ({
   subsection: string;
 }): React.JSX.Element {
   return (
-    <section className={`${subsection} max-w-4xl mx-auto`}>
-      <h1 className='text-center font-bold text-xl my-4 max-w-md py-1 px-2 bg-grayDark mx-auto text-grayLight rounded-md'>
+    <section className={`${subsection} max-w-4xl mx-auto px-2`}>
+      <h1 className='text-center font-bold text-xl my-4 w-full py-1 px-2 bg-grayDark mx-auto text-grayLight rounded-md'>
         {title}
       </h1>
-      <section className='grid md:grid-cols-3 gap-2 px-2'>
+      <section className='grid md:grid-cols-3 gap-4'>
         <div className='border border-grayDark rounded-md'>
           {col1}
         </div>
