@@ -29,7 +29,7 @@ function Col1 (): React.JSX.Element {
       <img
         src='/images/radio/chica_con_microfono.png'
         alt='chica con microfono'
-        className='h-full w-1/2 md:w-full float-left object-cover rounded-md'
+        className='h-full w-2/3 md:w-full float-left object-cover rounded-md'
       />
 
       <div className='card-info absolute top-10 right-4'>
@@ -78,7 +78,7 @@ function Col3 (): React.JSX.Element {
       <img
         src='/images/radio/chica_con_audifonos.png'
         alt='chica con microfono'
-        className='h-full w-1/2 md:w-full object-cover rounded-md float-right'
+        className='h-full w-2/3 md:w-full object-cover rounded-md float-right'
       />
 
       <div className='card-info absolute bottom-20 left-4'>
