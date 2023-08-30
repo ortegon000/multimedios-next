@@ -21,11 +21,11 @@ export default function Component3 ({
       <section className='flex relative'>
         <div className='bg-blur blur-md absolute w-[120%] h-[120%] -translate-x-[10%] -z-10 inset-0 m-auto' />
 
-        <div className='w-full bg-grayLight rounded-md grid grid-cols-3 gap-2 p-2'>
-          <h1 className='col-span-3 text-center text-2xl font-bold'>{title}</h1>
+        <div className='w-full bg-grayLight rounded-md md:grid md:grid-cols-3 gap-2 p-2'>
+          <h1 className='md:col-span-3 text-center text-2xl font-bold'>{title}</h1>
 
           {cards.map((card, key) => (
-            <div className='rounded-md min-h-[200px] border' key={key}>
+            <div className='rounded-md border mb-4 md:mb-0' key={key}>
               <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark animate__animated animate__zoomIn'>
                 <img
                   src={card.icon}
@@ -49,7 +49,7 @@ export default function Component3 ({
             </div>
           ))}
 
-          <div className='flex col-span-3 justify-end'>
+          <div className='flex col-span-3 justify-end mt-8 md:mt-0'>
             <Button url={urlButton} text={textButton} dark />
           </div>
         </div>

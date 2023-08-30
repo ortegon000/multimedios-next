@@ -1,10 +1,15 @@
-'use client'
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import Component2 from '../../components/layouts/component2'
 import Button from '../../components/button'
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ZoomImage from '@/app/components/zoom-image'
+
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Radio 2',
+  description: 'Presentación multimedios'
+}
 
 export default function RadioD2 (): React.JSX.Element {
   return (
@@ -48,9 +53,8 @@ function Col2 (): React.JSX.Element {
           className='radio-users-icon w-12 h-12 absolute bg-grayDark rounded-full border border-white top-0 left-0'
         />
       </div>
-      <Zoom>
-        <img src='/images/radio/cobertura-map.png' alt='' className='w-full rounded-md bg-grayLight rounded-md hover:bg-white transition' />
-      </Zoom>
+
+      <ZoomImage image='/images/radio/cobertura-map.png' />
     </div>
   )
 }

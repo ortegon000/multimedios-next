@@ -13,7 +13,7 @@ const cards = [
     icon: '/images/radio/lupe.png',
     title: 'Cadena la Lupe',
     subtitle: '22 emisoras',
-    columns: 'columns-2',
+    columns: 'columns-3 md:columns-2',
     list: [
       'Monterrey',
       'Linares',
@@ -43,7 +43,7 @@ const cards = [
     icon: '/images/radio/caliente.png',
     title: 'Cadena Caliente',
     subtitle: '12 emisoras',
-    columns: '',
+    columns: 'columns-2 md:columns-1',
     list: [
       'Monterrey',
       'Linares',
@@ -63,7 +63,7 @@ const cards = [
     icon: '/images/radio/hits.png',
     title: 'Cadena HITS',
     subtitle: '6 emisoras',
-    columns: '',
+    columns: 'columns-2 md:columns-1',
     list: [
       'Monterrey',
       'Torreón',
