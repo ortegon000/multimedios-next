@@ -14,11 +14,11 @@ export default function Component6 ({
   audio
 }: Props): React.JSX.Element {
   return (
-    <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center'>
-      <div className='w-7/12 flex gap-4'>
+    <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center px-4 md:px-0'>
+      <div className='md:w-7/12 w-full flex gap-4'>
         <div className='w-20'>
-          <span className='flex justify-center items-center border border-grayDark rounded-full'>
-            <img src={logo} alt='' className='h-16 w-16 object-contain' />
+          <span className='flex justify-center items-center border border-grayDark bg-grayLight rounded-full'>
+            <img src={logo} alt='' className='h-16 w-16 object-contain ' />
           </span>
         </div>
 

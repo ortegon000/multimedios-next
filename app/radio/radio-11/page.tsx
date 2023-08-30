@@ -3,6 +3,13 @@ import React from 'react'
 import Component7 from '../../components/layouts/component7'
 import Button from '../../components/button'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Radio 11',
+  description: 'Presentación multimedios'
+}
+
 const section = 'radio 11'
 const background = '2'
 
@@ -27,8 +34,8 @@ export default function RadioD11 (): React.JSX.Element {
             }
           ]}
         />
-        <div className='mt-4 max-w-4xl mx-auto text-sm'>
-          <Button url='/radio/radio-10' dark text='Volver a FMTU' />
+        <div className='mt-4 max-w-4xl mx-auto text-sm flex'>
+          <Button url='/radio/radio-10' dark back text='Volver a FMTU' />
         </div>
       </>
     </ContentLayout>

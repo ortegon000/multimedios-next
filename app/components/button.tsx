@@ -1,27 +1,30 @@
 import Link from 'next/link'
 import React from 'react'
 
-interface Props {
-  url: any;
-  text: string;
-  dark?: boolean;
-  className?: string;
-}
-
 export default function Button ({
   url,
   text,
   dark = false,
+  back = false,
   className = ''
-}: Props): React.JSX.Element {
+}: {
+  url: any;
+  text: string;
+  dark?: boolean;
+  back?: boolean;
+  className?: string;
+}): React.JSX.Element {
+  const darkClass = dark
+    ? 'bg-grayDark text-grayLight hover:bg-gray-900'
+    : 'bg-grayLight text-grayDark hover:bg-white'
+
+  const backButtonClass = back ? 'flex-row-reverse' : ''
+  const backSvgClass = back ? 'rotate-180 group-hover:-translate-x-2' : 'group-hover:translate-x-2'
+
   return (
     <span>
       <Link
-        href={url} className={`${className} button group flex justify-center items-center py-1 px-4 rounded-3xl transition-all ${
-        dark
-          ? 'bg-grayDark text-grayLight hover:bg-gray-900'
-          : 'bg-grayLight text-grayDark hover:bg-white'
-        }`}
+        href={url} className={`${className} button group flex justify-center items-center py-1 px-4 rounded-3xl transition-all ${darkClass} ${backButtonClass}`}
       >
         <span>{text}</span>
         <svg
@@ -30,7 +33,7 @@ export default function Button ({
           viewBox='0 0 24 24'
           strokeWidth='1.5'
           stroke='currentColor'
-          className='w-4 h-4 transition group-hover:translate-x-2'
+          className={`w-4 h-4 transition ${backSvgClass}`}
         >
           <path
             strokeLinecap='round'

@@ -4,6 +4,13 @@ import Component6 from '../../components/layouts/component6'
 import CircleLeft from '../../components/circle-left'
 import Button from '../../components/button'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Radio 18',
+  description: 'Presentación multimedios'
+}
+
 const image = '/images/radio/circle-left-11.png'
 const section = 'radio 18'
 const background = '2'
@@ -51,12 +58,13 @@ export default function RadioD18 (): React.JSX.Element {
           </>
         </Component6>
 
-        <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center'>
+        <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center px-4 md:px-0'>
           <div className=''>
             <Button
               url='/radio/radio-5'
               text='REGRESAR A EMISORAS'
               dark
+              back
               className='text-sm'
             />
           </div>

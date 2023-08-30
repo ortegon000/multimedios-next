@@ -2,6 +2,13 @@ import ContentLayout from '../../content-layout'
 import React from 'react'
 import Component4 from '../../components/layouts/component4'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Radio 12',
+  description: 'Presentación multimedios'
+}
+
 const title = 'CLASSIC'
 const image = '/images/radio/circle-left-6.png'
 const logo = '/images/radio/classic.png'

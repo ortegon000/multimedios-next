@@ -21,7 +21,7 @@ export default function Component4 ({
     <>
       <CircleLeft image={image} />
 
-      <div className='mt-10'>
+      <div className='mt-4'>
         <Component5 logo={logo} title={title} audio={audio}>
           {children}
         </Component5>

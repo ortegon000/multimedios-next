@@ -3,6 +3,13 @@ import React from 'react'
 import Component4 from '../../components/layouts/component4'
 import Button from '../../components/button'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Radio 13',
+  description: 'Presentación multimedios'
+}
+
 const title = 'RG LA DEPORTIVA'
 const image = '/images/radio/circle-left-7.png'
 const logo = '/images/radio/la-deportiva.png'
