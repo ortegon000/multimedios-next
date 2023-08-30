@@ -5,7 +5,7 @@ export default function CircleLeft ({ image, className }: {
   className?: string;
 }): React.JSX.Element {
   return (
-    <div className={`${className} absolute -z-10 bottom-0 left-0`}>
+    <div className={`${className} absolute -z-10 bottom-0 left-0 overflow-hidden`}>
       <div className='left-circle-dot-1 flex justify-center items-start'>
         <span className='transform -translate-y-1.5 block w-3 h-3 rounded-full bg-grayDark' />
       </div>

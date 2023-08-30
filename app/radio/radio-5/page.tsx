@@ -76,10 +76,10 @@ export default function RadioD5 (): React.JSX.Element {
   return (
     <ContentLayout section='radio 5' background='2'>
       <div>
-        <CircleLeft image='/images/radio/circle-left-1.png' className='hidden md:flex' />
+        <CircleLeft image='/images/radio/circle-left-1.png' className='' />
 
         <section className='radio-d5 mx-auto max-w-4xl mt-4 flex justify-end items-center'>
-          <div className='w-full md:w-1/2 bg-grayLight rounded-md p-2'>
+          <div className='w-full md:w-1/2 px-4'>
             <h1 className='text-center text-3xl font-bold mb-8'>EMISORAS</h1>
             <ul className='grid grid-cols-4 gap-y-8'>
               {icons.map((item, key) => (
@@ -88,7 +88,7 @@ export default function RadioD5 (): React.JSX.Element {
                   className='relative text-center'
                 >
                   <Link href={item.url} className='group'>
-                    <span className='w-20 h-20 flex justify-center items-center mx-auto rounded-full border border-grayDark'>
+                    <span className='w-20 h-20 flex justify-center items-center mx-auto rounded-full border border-grayDark bg-grayLight'>
                       <img
                         src={item.image}
                         alt=''
