@@ -49,7 +49,7 @@ function Col2 (): React.JSX.Element {
         />
       </div>
       <Zoom>
-        <img src='/images/radio/cobertura-map.png' alt='' className='w-full rounded-md bg-grayLight rounded-md' />
+        <img src='/images/radio/cobertura-map.png' alt='' className='w-full rounded-md bg-grayLight rounded-md hover:bg-white transition' />
       </Zoom>
     </div>
   )
