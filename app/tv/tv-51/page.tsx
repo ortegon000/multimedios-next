@@ -1,6 +1,11 @@
-import ContentLayout from '../content-layout'
-import Component8 from '../components/layouts/component8'
+import ContentLayout from '../../content-layout'
+import Component8 from '../../components/layouts/component8'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Tv 51',
+  description: 'Presentación multimedios'
+}
 
 export default function Tv51 (): React.JSX.Element {
   return (

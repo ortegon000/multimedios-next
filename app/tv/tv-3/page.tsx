@@ -49,7 +49,7 @@ export default function Tv3 (): React.JSX.Element {
         <div className='mt-4 grid grid-cols-2 md:grid-cols-3 gap-2 px-4'>
           {buttons.map((item, key) => (
             <div className={key === buttons.length - 1 ? 'md:col-start-2' : ''} key={key}>
-              <Link href={item.url} className='border border-grayDark rounded-md font-bold w-full py-4 px-2 hover:scale-110 hover:shadow-xl transition-all text-xs md:text-sm text-center h-full flex justify-center items-center '>
+              <Link href={item.url} className='border border-grayDark rounded-md font-bold w-full py-4 px-2 hover:scale-110 hover:shadow-xl transition-all text-xs md:text-sm text-center h-full flex justify-center items-center bg-grayLight '>
                 {item.name}
               </Link>
             </div>
