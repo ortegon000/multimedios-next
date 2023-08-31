@@ -2,6 +2,14 @@ import React from 'react'
 import ContentLayout from '../../content-layout'
 import Component2 from '../../components/layouts/component2'
 
+import { Metadata } from 'next'
+import ZoomImage from '@/app/components/zoom-image'
+
+export const metadata: Metadata = {
+  title: 'Multimedios - Tv 2',
+  description: 'Presentación multimedios'
+}
+
 const cities = [
   'MONTERREY 6.1',
   'LINARES 6.1',
@@ -40,16 +48,16 @@ export default function Tv2 (): React.JSX.Element {
 function Col1 (): React.JSX.Element {
   return (
     <>
-      <article className='bg-grayDark text-grayLight p-4 rounded-md'>
-        <p className='text-sm'>
+      <article className='bg-grayDark text-grayLight p-2 rounded-md'>
+        <p className='text-center md:text-left'>
           <span className='text-lg font-bold'>
             Presencia en las siguientes ciudades
           </span>
         </p>
       </article>
 
-      <article className='w-64 p-2 border border-grayDark bg-grayLight rounded-md mt-4'>
-        <ul className='text-xs leading-4 columns-2'>
+      <article className='relative z-10 w-full md:w-64 p-2 border border-grayDark bg-grayLight rounded-md mt-4'>
+        <ul className='text-xs leading-4 columns-3 md:columns-2'>
           {cities.map((city, key) => (
             <li key={key}>{city}</li>
           ))}
@@ -61,16 +69,10 @@ function Col1 (): React.JSX.Element {
 
 function Col2 (): React.JSX.Element {
   return (
-    <div className='relative hover:bg-grayLight-50 transition rounded-md cursor-zoom-in flex justify-center'>
-      {/* <Zoom
-        img='/images/tv/cobertura-map.png'
-        zoomScale={1.5}
-        width={600}
-        height={364}
-      /> */}
+    <div className='relative hover:bg-white transition rounded-md mt-8 md:mt-0'>
 
-      <div className='absolute top-0 right-0'>
-        <div className='bg-grayDark text-grayLight rounded-md p-4'>
+      <div className='md:absolute top-0 right-0 z-10 bg-grayLight md:bg-transparent'>
+        <div className='bg-grayDark text-grayLight rounded-md p-4 max-w-xs mx-auto relative'>
           <span className='text-3xl font-bold'>24 Ciudades</span>
           <br />
           <span className='text-xl'>Regionales</span>
@@ -81,10 +83,14 @@ function Col2 (): React.JSX.Element {
           />
         </div>
 
-        <p className='text-3xl font-bold'>Más de 4</p>
-        <p className='text-3xl'>millones</p>
-        <p className='font-bold'>de Televidentes diario</p>
+        <div className='max-w-xs mx-auto mb-5 md:mb-0'>
+          <p className='text-3xl font-bold'>Más de 4</p>
+          <p className='text-3xl'>millones</p>
+          <p className='font-bold'>de Televidentes diario</p>
+        </div>
       </div>
+
+      <ZoomImage image='/images/tv/cobertura-map.png' className='max-w-md md:bg-transparent' />
     </div>
   )
 }
