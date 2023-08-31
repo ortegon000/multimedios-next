@@ -1,9 +1,9 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import Component2 from '../../components/layouts/component2'
+import ZoomImage from '@/app/components/zoom-image'
 
 import { Metadata } from 'next'
-import ZoomImage from '@/app/components/zoom-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Tv 2',
