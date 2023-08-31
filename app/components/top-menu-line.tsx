@@ -19,7 +19,7 @@ export default function TopMenuLine ({
 
   return (
     <div className='mt-2 text-center'>
-      <span className='border border-grayDark w-full max-w-sm inline-block relative'>
+      <span className='border border-grayDark w-full max-w-[90%] inline-block relative'>
         <span
           className={`${position} transition-all duration-300 w-3 h-3 inline-block bg-grayDark rounded-full absolute top-1/2 transform -translate-y-1/2`}
           id='top-menu-dot'
