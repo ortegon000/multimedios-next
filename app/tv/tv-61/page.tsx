@@ -1,7 +1,5 @@
 import ContentLayout from '../../content-layout'
 import React from 'react'
-import Button from '../../components/button'
-import ZoomImage from '@/app/components/zoom-image'
 
 import Component10 from '../../components/layouts/component10'
 
