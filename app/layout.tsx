@@ -13,6 +13,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang='es'>
+      <meta name='theme-color' content='#E9E9E9' />
       <AnimatePresence>
         <body className={inter.className}>{children}</body>
       </AnimatePresence>

@@ -1,18 +1,16 @@
 import React from 'react'
 
-interface Props {
-  children: React.JSX.Element;
-  title: string;
-  logo: string;
-  audio: string;
-}
-
 export default function Component6 ({
   children,
   logo,
   title,
   audio
-}: Props): React.JSX.Element {
+}: {
+  children: React.JSX.Element;
+  title: string;
+  logo: string;
+  audio: string;
+}): React.JSX.Element {
   return (
     <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center px-4 md:px-0'>
       <div className='md:w-7/12 w-full flex gap-4'>
