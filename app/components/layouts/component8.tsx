@@ -19,7 +19,7 @@ export default function Component8 ({
           </h1>
           <h2 className='text-center text-2xl mb-4'>{title}</h2>
 
-          <div className='flex flex-col md:flex-row gap-4 justify-center items-center w-full animate__animated animate__bounce'>
+          <div className='flex flex-col md:flex-row gap-4 justify-center items-center w-full'>
             {videos.map((video, key) => (
               <div
                 className='player-wrapper rounded-md overflow-hidden max-w-lg'

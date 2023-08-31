@@ -27,7 +27,7 @@ export default function Component3 ({
           {cards.map((card, key) => (
             <div className='rounded-md border mb-4 md:mb-0' key={key}>
               <div className='flex md:block'>
-                <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark animate__animated animate__zoomIn'>
+                <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark'>
                   <img
                     src={card.icon}
                     alt=''

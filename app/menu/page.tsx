@@ -25,7 +25,7 @@ function Menu (): React.JSX.Element {
           <div className='absolute bottom-2 left-2'>
             <Link
               href='/contacto'
-              className='border border-black rounded-lg py-2 px-6 transform hover:scale-110 hover:bg-grayDark hover:text-grayLight block transition text-lg animate__animated animate__bounce'
+              className='border border-black rounded-lg py-2 px-6 transform hover:scale-110 hover:bg-grayDark hover:text-grayLight block transition text-lg'
             >
               Contacto
             </Link>

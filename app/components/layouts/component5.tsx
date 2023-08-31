@@ -16,7 +16,7 @@ export default function Component5 ({
     <section className='radio mx-auto max-w-4xl flex justify-center items-center'>
       <div className='w-full md:w-7/12 flex gap-2 px-2'>
         <div className='w-24 md:flex hidden'>
-          <span className='flex h-20 w-20 justify-center items-center border border-grayDark rounded-full animate__animated animate__bounce animate__infinite animate__repeat-2'>
+          <span className='flex h-20 w-20 justify-center items-center border border-grayDark rounded-full'>
             <img src={logo} alt='' className='h-14 w-14 object-contain' />
           </span>
         </div>
@@ -24,7 +24,7 @@ export default function Component5 ({
         <div className='w-full'>
           <h1 className='my-4 text-3xl font-bold flex items-center justify-between'>
             {title}
-            <span className='flex justify-center items-center p-2 border border-grayDark rounded-full animate__animated animate__bounce animate__infinite animate__repeat- bg-grayLight md:hidden'>
+            <span className='flex justify-center items-center p-2 border border-grayDark rounded-full bg-grayLight md:hidden'>
               <img src={logo} alt='' className='h-12 w-12 object-contain' />
             </span>
           </h1>

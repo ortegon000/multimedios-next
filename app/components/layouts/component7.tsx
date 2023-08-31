@@ -46,7 +46,7 @@ export default function Component7 ({ logo, images }: {
               <img
                 src={item.image}
                 alt=''
-                className='object-contain h-full w-full animate__animated animate__jackInTheBox'
+                className='object-contain h-full w-full'
               />
             </Atropos>
           </div>

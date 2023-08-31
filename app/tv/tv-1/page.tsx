@@ -22,7 +22,7 @@ export default function Tv1 (): React.JSX.Element {
               <img
                 src='/images/logo.png'
                 alt=''
-                className='w-32 object-contain animate__animated animate__bounce animate__repeat-2'
+                className='w-32 object-contain'
               />
               <div className='w-full'>
                 <h1 className='text-3xl font-bold'>Televisión en vivo.</h1>

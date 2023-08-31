@@ -5,7 +5,7 @@ import ZoomImage from '../zoom-image'
 export default function Component10 ({ image }:{image:string}): React.JSX.Element {
   return (
     <section className='mt-10 max-w-4xl mx-auto px-2'>
-      <div className='flex justify-center hover:cursor-zoom-in animate__animated animate__zoomInDown'>
+      <div className='flex justify-center hover:cursor-zoom-in'>
         <ZoomImage image={image} />
       </div>
 
