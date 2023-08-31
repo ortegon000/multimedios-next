@@ -64,7 +64,7 @@ export default function TopMenu ({
 }): React.JSX.Element {
   return (
     <nav className='pt-4'>
-      <ul className='flex justify-center items-center gap-4 font-semibold text-sm [&>li]:border-2 [&>li]:border-black [&>li]:rounded-full [&>li>a>svg]:p-2 [&>li>a]:w-12 [&>li>a]:h-12 [&>li>a]:flex [&>li>a]:justify-center [&>li>a]:items-center'>
+      <ul className='flex justify-center items-center gap-2 md:gap-4 font-semibold text-sm [&>li]:border-2 [&>li]:border-black [&>li]:rounded-full [&>li>a>svg]:p-2 [&>li>a]:w-12 [&>li>a]:h-12 [&>li>a]:flex [&>li>a]:justify-center [&>li>a]:items-center'>
         {menu.map((item, key) => {
           dotPosition = item.name === section.split(' ')[0] ? item.dotPosition : dotPosition
 

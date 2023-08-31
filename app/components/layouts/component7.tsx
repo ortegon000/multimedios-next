@@ -36,7 +36,7 @@ export default function Component7 ({ logo, images }: {
       <div className='flex flex-col md:flex-row max-w-4xl mt-4 mx-auto justify-center items-center gap-4 px-4 md:px-0'>
         {images.map((item, key) => (
           <div
-            className={`${translate} md:hover:scale-150 transition-all hover:z-50`}
+            className={`${translate} md:hover:scale-150 transition-all hover:z-50 w-3/4`}
             key={key}
             onMouseEnter={() => {
               handleMouseEnter(key)

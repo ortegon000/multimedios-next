@@ -16,7 +16,7 @@ const background = '2'
 export default function RadioD9 (): React.JSX.Element {
   return (
     <ContentLayout section={section} background={background}>
-      <>
+      <div className='px-4'>
         <Component7
           logo='/images/radio/d99.png'
           images={[
@@ -37,7 +37,7 @@ export default function RadioD9 (): React.JSX.Element {
         <div className='mt-4 flex max-w-4xl mx-auto text-sm'>
           <Button url='/radio/radio-8' dark back text='Volver a D99' />
         </div>
-      </>
+      </div>
     </ContentLayout>
   )
 }
