@@ -13,7 +13,9 @@ function OOH2 (): React.JSX.Element {
   return (
     <ContentLayout section='ooh 1' background='1'>
       <section className='w-full px-2 max-w-4xl mx-auto md:flex md:flex-row-reverse md:gap-4 mt-4'>
-        <article className='relative z-10 w-full max-w-sm bg-grayLight/50 backdrop-blur'>
+        <h1 className='md:hidden text-3xl font-bold text-center'>COBERTURA</h1>
+
+        <article className='mt-8 relative z-10 w-full max-w-sm bg-grayLight/50 backdrop-blur'>
           <div className=''>
             <p>
               <span className='text-2xl'>PRESENTES EN</span>
@@ -42,6 +44,7 @@ function OOH2 (): React.JSX.Element {
         </article>
 
         <div className='mt-4 md:mt-0'>
+          <h1 className='hidden md:flex float-right text-3xl font-bold text-center'>COBERTURA</h1>
           <ZoomImage image='/images/ooh/d2.png' />
         </div>
       </section>
