@@ -1,7 +1,6 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
-import Button from '@/app/components/button'
 import ZoomImage from '@/app/components/zoom-image'
 
 export const metadata: Metadata = {
