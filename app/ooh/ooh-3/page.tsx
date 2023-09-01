@@ -11,39 +11,39 @@ export const metadata: Metadata = {
 const list = [
   {
     name: 'Carteleras',
-    url: '/'
+    url: '/ooh/ooh-4'
   },
   {
     name: 'Muros',
-    url: '/'
+    url: '/ooh/ooh-5'
   },
   {
     name: 'Túneles',
-    url: '/'
+    url: '/ooh/ooh-8'
   },
   {
     name: 'Puentes Peatonales',
-    url: '/'
+    url: '/ooh/ooh-6'
   },
   {
     name: 'Vallas Fijas',
-    url: '/'
+    url: '/ooh/ooh-7'
   },
   {
     name: 'Pantallas Digitales',
-    url: '/'
+    url: '/ooh/ooh-9'
   },
   {
     name: 'Autobuses',
-    url: '/'
+    url: '/ooh/ooh-10'
   },
   {
     name: 'Vallas Móviles',
-    url: '/'
+    url: '/ooh/ooh-11'
   },
   {
     name: 'Impresión Digital',
-    url: '/'
+    url: '/ooh/ooh-12'
   }
 
 ]

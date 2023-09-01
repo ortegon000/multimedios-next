@@ -35,11 +35,11 @@ function OOH (): React.JSX.Element {
             </div>
             <div className=''>
               <img src='/images/ooh/d1-3.png' alt='' className='w-2/3 mx-auto' />
-              <Button url='#' text='FORMATOS' dark className='mt-2 text-sm' />
+              <Button url='/ooh/ooh-3' text='FORMATOS' dark className='mt-2 text-sm' />
             </div>
             <div className=''>
               <img src='/images/ooh/d1-4.png' alt='' className='w-2/3 mx-auto' />
-              <Button url='#' text='AAEE' dark className='mt-2 text-sm' />
+              <Button url='/ooh/ooh-13' text='AAEE' dark className='mt-2 text-sm' />
             </div>
           </div>
         </article>
