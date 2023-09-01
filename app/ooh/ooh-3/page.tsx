@@ -48,7 +48,7 @@ const list = [
 
 ]
 
-function OOH2 (): React.JSX.Element {
+function OOH3 (): React.JSX.Element {
   return (
     <ContentLayout section='ooh 3' background='1'>
       <section className='w-full px-2 max-w-2xl mx-auto mt-4 flex flex-wrap justify-center gap-2 md:gap-4'>
@@ -68,4 +68,4 @@ function OOH2 (): React.JSX.Element {
   )
 }
 
-export default OOH2
+export default OOH3
