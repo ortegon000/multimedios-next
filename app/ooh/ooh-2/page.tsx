@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 function OOH2 (): React.JSX.Element {
   return (
-    <ContentLayout section='ooh 1' background='1'>
+    <ContentLayout section='ooh 2' background='1'>
       <section className='w-full px-2 max-w-4xl mx-auto md:flex md:flex-row-reverse md:gap-4 mt-4'>
         <h1 className='md:hidden text-3xl font-bold text-center'>COBERTURA</h1>
 
