@@ -15,7 +15,7 @@ export default function Component11 ({ images, title, subtitle = 'PUBLICIDAD EXT
       <div className='mt-4 px-12 flex flex-col md:flex-row md:px-2 gap-2'>
         {
             images.map((item, key) => (
-              <Atropos key={key}>
+              <Atropos key={key} className='mx-auto'>
                 <img src={item} alt='' className='rounded-md mx-auto' />
               </Atropos>
             ))
