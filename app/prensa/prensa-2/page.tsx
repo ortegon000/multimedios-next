@@ -1,6 +1,5 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
-import Button from '@/app/components/button'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
