@@ -8,12 +8,6 @@ export const metadata: Metadata = {
   description: 'Presentación multimedios'
 }
 
-const images = [
-  '',
-  '',
-  '/images/prensa/d6-3.png'
-]
-
 function Prensa (): React.JSX.Element {
   return (
     <ContentLayout section='prensa'>
@@ -25,7 +19,7 @@ function Prensa (): React.JSX.Element {
           poder de compra y de decisión de compra
         </p>
 
-        <div className='flex flex-col md:flex-row gap-8 md: gap-4 mb-4 md:mb-0 items-center'>
+        <div className='flex flex-col md:flex-row gap-8 md:gap-4 mb-4 md:mb-0 items-center'>
 
           <div className='w-[80%] mx-auto'>
             <ZoomImage image='/images/prensa/d6-1.png' />
