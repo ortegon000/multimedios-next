@@ -30,7 +30,7 @@ function Prensa (): React.JSX.Element {
             </div>
           </div>
 
-          <span className='hidden md:flex block h-64 border-l-2 border-grayDark m-auto' />
+          <span className='hidden md:flex h-64 border-l-2 border-grayDark m-auto' />
 
           <div>
             <p className='border border-grayDark p-2 rounded-md mb-4'>
