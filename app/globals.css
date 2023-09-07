@@ -179,6 +179,14 @@
   animation-delay:0.5s;
 }
 
+.vertical-sliding-dot {
+  animation: verticalSlidingDot 4s infinite linear;
+}
+.vertical-sliding-dot2 {
+  animation: verticalSlidingDot 3s infinite linear;
+  animation-delay:0.5s;
+}
+
 /* .player-wrapper {
   position: relative;
   padding-top: 56.25%;
@@ -189,6 +197,14 @@
   top: 0;
   left: 0;
 } */
+@keyframes verticalSlidingDot {
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
 
 @keyframes slidingDot {
   50% {
