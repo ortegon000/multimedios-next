@@ -10,7 +10,7 @@ export default function Component12 ({ images, title, subtitle = 'MILENIO DIARIO
       <h1 className='text-2xl font-bold text-center mb-2'>{title}</h1>
       <h2 className='text-xl text-center mb-4'>{subtitle}</h2>
 
-      <div className='flex flex-col md:flex-row gap-4'>
+      <div className='flex flex-col md:flex-row gap-4 items-center bg-grayLight/50 backdrop-blur p-2'>
         {
             images.map((image, key) => (
               <div key={key}>
