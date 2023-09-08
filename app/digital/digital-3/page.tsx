@@ -1,79 +1,60 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
-import Link from 'next/link'
 
-const buttons = [
-  {
-    logo: '/images/digital/d2-1.png',
-    url: '#',
-    height: 'h-8'
-  },
-  {
-    logo: '/images/digital/d2-2.png',
-    url: '#',
-    height: 'h-8'
-  },
-  {
-    logo: '/images/digital/d2-3.png',
-    url: '#',
-    height: 'h-12'
-  },
-  {
-    logo: '/images/digital/d2-4.png',
-    url: '#',
-    height: 'h-10'
-  },
-  {
-    logo: '/images/digital/d2-5.png',
-    url: '#',
-    height: 'h-8'
-  },
-  {
-    logo: '/images/digital/d2-6.png',
-    url: '#',
-    height: 'h-12'
-  },
-  {
-    logo: '/images/digital/d2-7.png',
-    url: '#',
-    height: 'h-10'
-  },
-  {
-    logo: '/images/digital/d2-8.png',
-    url: '#',
-    height: 'h-12'
-  },
-  {
-    logo: '/images/digital/d2-9.png',
-    url: '#',
-    height: 'h-12'
-  }
-]
+import CardBgBlur from '@/app/components/card-bg-blue'
+import Component13 from '@/app/components/layouts/component13'
 
 export const metadata: Metadata = {
-  title: 'Multimedios - Digital 2',
+  title: 'Multimedios - Digital 3',
   description: 'Presentación multimedios'
 }
 
+const logo = '/images/digital/d2-1.png'
+const images = [
+  {
+    image: '/images/digital/d3-1.png',
+    title: '50.9 M',
+    subtitle: 'Usuarios'
+  },
+  {
+    image: '/images/digital/d3-2.png',
+    title: '4.8 M',
+    subtitle: ''
+  },
+  {
+    image: '/images/digital/d3-3.png',
+    title: '295.6 K',
+    subtitle: ''
+  },
+  {
+    image: '/images/digital/d3-4.png',
+    title: '5.6 M',
+    subtitle: ''
+  },
+  {
+    image: '/images/digital/d3-5.png',
+    title: '596 K',
+    subtitle: ''
+  },
+  {
+    image: '/images/digital/d3-6.png',
+    title: '5.18 M',
+    subtitle: ''
+  }
+]
+
+const list = [
+  'Líderes en México dentro de la categoria de noticias',
+  'Veracidad, inmediatez y credibilidad'
+]
+
 function Digital (): React.JSX.Element {
   return (
-    <ContentLayout section='prensa'>
-      <section className='max-w-4xl mx-auto px-2 mt-4'>
-        <div className='mb-4'>
-          <img src='/images/logo.png' alt='' className='h-12 mx-auto' />
-          <p className='text-center mt-2'>HOLDING DIGITAL</p>
-        </div>
-        <div className='flex flex-wrap gap-4 justify-center'>
-          {
-            buttons.map((button, key) => (
-              <Link href={button.url} key={key} className='flex justify-center items-center p-2 border border-grayDark rounded-md w-[40%] md:w-[30%] hover:scale-110 transition-transform bg-grayLight'>
-                <img src={button.logo} alt='' className={button.height} />
-              </Link>
-            ))
-          }
-        </div>
-      </section>
+    <ContentLayout section='digital'>
+      <CardBgBlur>
+        <Component13 images={images} logo={logo} list={list} />
+      </CardBgBlur>
     </ContentLayout>
   )
 }

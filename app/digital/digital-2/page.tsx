@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 function Digital (): React.JSX.Element {
   return (
-    <ContentLayout section='prensa'>
+    <ContentLayout section='digital'>
       <section className='max-w-4xl mx-auto px-2 mt-4'>
         <div className='mb-4'>
           <img src='/images/m.png' alt='' className='h-12 mx-auto' />
