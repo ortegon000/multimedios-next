@@ -61,7 +61,7 @@ function Digital (): React.JSX.Element {
     <ContentLayout section='prensa'>
       <section className='max-w-4xl mx-auto px-2 mt-4'>
         <div className='mb-4'>
-          <img src='/images/m.png' alt='' className='h-12 mx-auto' />
+          <img src='/images/logo.png' alt='' className='h-12 mx-auto' />
           <p className='text-center mt-2'>HOLDING DIGITAL</p>
         </div>
         <div className='flex flex-wrap gap-4 justify-center'>
