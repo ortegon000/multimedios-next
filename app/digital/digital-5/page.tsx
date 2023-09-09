@@ -10,43 +10,43 @@ export const metadata: Metadata = {
   description: 'Presentación multimedios'
 }
 
-const logo = '/images/digital/d2-1.png'
+const logo = '/images/digital/d2-3.png'
 const images = [
   {
-    image: '/images/digital/d3-1.png',
-    title: '50.9 M',
+    image: '/images/digital/d5-1.png',
+    title: '1 M',
     subtitle: 'Usuarios'
   },
   {
-    image: '/images/digital/d3-2.png',
-    title: '4.8 M',
+    image: '/images/digital/d5-2.png',
+    title: '5.7 M',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-3.png',
-    title: '295.6 K',
+    image: '/images/digital/d5-3.png',
+    title: '2.2 M',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-4.png',
-    title: '5.6 M',
+    image: '/images/digital/d5-4.png',
+    title: '2 M',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-5.png',
-    title: '596 K',
+    image: '/images/digital/d5-5.png',
+    title: '885 K',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-6.png',
-    title: '5.18 M',
+    image: '/images/digital/d5-6.png',
+    title: '3.5 M',
     subtitle: ''
   }
 ]
 
 const list = [
-  'Líderes en México dentro de la categoria de noticias',
-  'Veracidad, inmediatez y credibilidad'
+  'Sitio de entretenimiento con mas de 4 Millones de páginas vistas por mes.',
+  'Dentro del Top10 en sitios de entretenimiento según Comscore.'
 ]
 
 function Digital (): React.JSX.Element {

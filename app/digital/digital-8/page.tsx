@@ -10,43 +10,44 @@ export const metadata: Metadata = {
   description: 'Presentación multimedios'
 }
 
-const logo = '/images/digital/d2-1.png'
+const logo = '/images/digital/d2-6.png'
 const images = [
   {
-    image: '/images/digital/d3-1.png',
-    title: '50.9 M',
+    image: '/images/digital/d8-1.png',
+    title: '20.4 M',
     subtitle: 'Usuarios'
   },
   {
-    image: '/images/digital/d3-2.png',
-    title: '4.8 M',
+    image: '/images/digital/d8-2.png',
+    title: '3.4 M',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-3.png',
-    title: '295.6 K',
+    image: '/images/digital/d8-3.png',
+    title: '5,500',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-4.png',
-    title: '5.6 M',
+    image: '/images/digital/d8-4.png',
+    title: '2.4 M',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-5.png',
-    title: '596 K',
+    image: '/images/digital/d8-5.png',
+    title: '610 K',
     subtitle: ''
   },
   {
-    image: '/images/digital/d3-6.png',
-    title: '5.18 M',
+    image: '/images/digital/d8-6.png',
+    title: '273 K',
     subtitle: ''
   }
 ]
 
 const list = [
-  'Líderes en México dentro de la categoria de noticias',
-  'Veracidad, inmediatez y credibilidad'
+  'Nativos digitales deportivos, líderes en la industria.',
+  '23 años de experiencia.',
+  'Generadores de contenidos'
 ]
 
 function Digital (): React.JSX.Element {
