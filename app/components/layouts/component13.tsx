@@ -28,7 +28,7 @@ export default function Component13 ({ images, logo, list = [] }:{images:any[], 
         <div className='grid grid-cols-2 gap-y-8 gap-x-4 md:w-1/2 mb-8'>
           {
             images.map((image, key) => (
-              <div className='flex items-center justify-center md:justify-start' key={key}>
+              <div className='flex items-center' key={key}>
                 <img src={image.image} alt='' className='h-12 mr-2' />
                 <div>
                   <p className='font-bold text-xl'>{image.title}</p>
