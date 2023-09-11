@@ -85,9 +85,9 @@ function Digital (): React.JSX.Element {
         </div>
 
         <div className='flex flex-wrap gap-4 justify-center'>
-          <Button url='#' text="MÉTRICAS U KPI'S" dark />
-          <Button url='#' text='SOLUCIONES DIGITALES' dark />
-          <Button url='#' text='CASOS DE ÉXITO' dark />
+          <Button url='/digital/digital-2' text="MÉTRICAS U KPI'S" dark />
+          <Button url='/digital/digital-12' text='SOLUCIONES DIGITALES' dark />
+          <Button url='/digital/digital-13' text='CASOS DE ÉXITO' dark />
         </div>
       </section>
     </ContentLayout>
