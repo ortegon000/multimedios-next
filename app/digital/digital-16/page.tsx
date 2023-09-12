@@ -6,33 +6,33 @@ import CardBgBlur from '@/app/components/card-bg-blue'
 import Component13 from '@/app/components/layouts/component14'
 
 export const metadata: Metadata = {
-  title: 'Multimedios - Digital 14',
+  title: 'Multimedios - Digital 16',
   description: 'Presentación multimedios'
 }
 
-const image = '/images/digital/d14.png'
-const logo = '/images/digital/d14_1.png'
-const social = '/images/digital/d3-3.png'
-const socialText = 'TIKTOK'
+const image = '/images/digital/d16.png'
+const logo = '/images/digital/d16_1.png'
+const social = '/images/digital/d3-2.png'
+const socialText = 'VIDEO POST FACEBOOK'
 const data = [
   {
-    value: '520,200',
+    value: '610,400',
     text: 'REPRODUCCIONES'
   },
   {
-    value: '52,500',
+    value: '38,300',
     text: 'LIKES'
   },
   {
-    value: '102',
+    value: '259',
     text: 'COMENTARIOS'
   },
   {
-    value: '232',
+    value: '332',
     text: 'COMPARTIDOS'
   }
 ]
-const bottomText = '***ALCANZÓ AL 55% DE SU AUDIENCIA TOTAL'
+const bottomText = '***ALCANZÓ AL 35% DE SU AUDIENCIA TOTAL'
 
 function Digital (): React.JSX.Element {
   return (

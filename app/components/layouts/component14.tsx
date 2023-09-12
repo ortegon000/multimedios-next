@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Atropos from 'atropos/react'
 
 import 'atropos/css'
 import Button from '../button'
@@ -8,7 +9,9 @@ export default function Component14 ({ image, logo, social, socialText, data, bo
   return (
     <div className='flex'>
       <div className='w-1/2 md:w-1/3'>
-        <img src={image} alt='' className='rounded' />
+        <Atropos>
+          <img src={image} alt='' className='rounded' />
+        </Atropos>
       </div>
 
       <div className='w-1/2 md:w-2/3 px-2 md:px-8'>
