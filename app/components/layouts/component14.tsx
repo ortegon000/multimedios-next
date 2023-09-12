@@ -12,6 +12,8 @@ export default function Component14 ({ image, logo, social, socialText, data, bo
         <Atropos>
           <img src={image} alt='' className='rounded' />
         </Atropos>
+
+        <Button url='/digital/digital-13' text='REGRESAR A MENÚ CASOS DE ÉXITO' dark back className='text-xs mt-4' />
       </div>
 
       <div className='w-1/2 md:w-2/3 px-2 md:px-8'>
