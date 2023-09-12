@@ -6,52 +6,52 @@ import Link from 'next/link'
 const buttons = [
   {
     logo: '/images/digital/d13-1.png',
-    url: '#',
+    url: '/digital/digital-14',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-2.png',
-    url: '#',
+    url: '/digital/digital-15',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-3.png',
-    url: '#',
+    url: '/digital/digital-16',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-4.png',
-    url: '#',
+    url: '/digital/digital-17',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-5.png',
-    url: '#',
+    url: '/digital/digital-18',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-6.png',
-    url: '#',
+    url: '/digital/digital-19',
     height: 'h-8'
   },
   {
     logo: '/images/digital/d13-7.png',
-    url: '#',
+    url: '/digital/digital-20',
     height: 'h-6'
   },
   {
     logo: '/images/digital/d13-8.png',
-    url: '#',
+    url: '/digital/digital-21',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-9.png',
-    url: '#',
+    url: '/digital/digital-22',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d13-10.png',
-    url: '#',
+    url: '/digital/digital-23',
     height: 'h-12'
   }
 ]

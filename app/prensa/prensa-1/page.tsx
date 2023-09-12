@@ -11,27 +11,27 @@ export const metadata: Metadata = {
 const buttons = [
   {
     name: 'COBERTURA',
-    url: '#'
+    url: '/prensa/prensa-2'
   },
   {
     name: 'PERFIL DE LECTORÍA',
-    url: '#'
+    url: '/prensa/prensa-5'
   },
   {
     name: 'FIRMAS',
-    url: '#'
+    url: '/prensa/prensa-3'
   },
   {
     name: 'EDICIONES ESPECIALES',
-    url: '#'
+    url: '/prensa/prensa-6'
   },
   {
     name: 'ALIANZAS',
-    url: '#'
+    url: '/prensa/prensa-4'
   },
   {
     name: 'ESPACIOS DIFERENCIADOS',
-    url: '#'
+    url: '/prensa/prensa-7'
   }
 ]
 
@@ -43,7 +43,7 @@ function Prensa (): React.JSX.Element {
           <img src='/images/prensa/d2.png' alt='' className='hover:scale-110 w-[80%] md:w-[95%] mx-auto transition-transform hover:rotate-12' />
         </div>
 
-        <div className='w-full border border-grayDark rounded-md p-4'>
+        <div className='w-full border border-grayDark bg-grayLight/50 backdrop-blur rounded-md p-4'>
           <h1 className='text-2xl font-bold'>Prensa</h1>
           <p>
             Somos uno de los diarios más poderosos e

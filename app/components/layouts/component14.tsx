@@ -27,13 +27,13 @@ export default function Component14 ({ image, logo, social, socialText, data, bo
 
         <div className='grid md:grid-cols-2 mb-2'>
           {
-                data.map((item, key) => (
-                  <div key={key} className='mb-2'>
-                    <p className='text-2xl font-bold'>{item.value}</p>
-                    <p>{item.text}</p>
-                  </div>
-                ))
-              }
+            data.map((item, key) => (
+              <div key={key} className='mb-2'>
+                <p className='text-2xl font-bold'>{item.value}</p>
+                <p>{item.text}</p>
+              </div>
+            ))
+          }
         </div>
 
         <p className='text-sm mb-4'>{bottomText}</p>

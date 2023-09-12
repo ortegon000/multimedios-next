@@ -33,9 +33,12 @@ const bottomText = '***ALCANZÓ AL 10% DE SU AUDIENCIA TOTAL'
 function Digital (): React.JSX.Element {
   return (
     <ContentLayout section='digital'>
-      <CardBgBlur>
-        <Component13 image={image} logo={logo} social={social} socialText={socialText} data={data} bottomText={bottomText} />
-      </CardBgBlur>
+      <>
+        <h1 className='text-2xl font-bold text-center my-2'>CASOS DE ÉXITO</h1>
+        <CardBgBlur>
+          <Component13 image={image} logo={logo} social={social} socialText={socialText} data={data} bottomText={bottomText} />
+        </CardBgBlur>
+      </>
     </ContentLayout>
   )
 }

@@ -6,47 +6,47 @@ import Link from 'next/link'
 const buttons = [
   {
     logo: '/images/digital/d2-1.png',
-    url: '#',
+    url: '/digital/digital-3',
     height: 'h-8'
   },
   {
     logo: '/images/digital/d2-2.png',
-    url: '#',
+    url: '/digital/digital-4',
     height: 'h-8'
   },
   {
     logo: '/images/digital/d2-3.png',
-    url: '#',
+    url: '/digital/digital-5',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d2-4.png',
-    url: '#',
+    url: '/digital/digital-6',
     height: 'h-10'
   },
   {
     logo: '/images/digital/d2-5.png',
-    url: '#',
+    url: '/digital/digital-7',
     height: 'h-8'
   },
   {
     logo: '/images/digital/d2-6.png',
-    url: '#',
+    url: '/digital/digital-8',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d2-7.png',
-    url: '#',
+    url: '/digital/digital-9',
     height: 'h-10'
   },
   {
     logo: '/images/digital/d2-8.png',
-    url: '#',
+    url: '/digital/digital-10',
     height: 'h-12'
   },
   {
     logo: '/images/digital/d2-9.png',
-    url: '#',
+    url: '/digital/digital-11',
     height: 'h-12'
   }
 ]
