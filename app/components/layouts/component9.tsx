@@ -4,6 +4,7 @@ import Atropos from 'atropos/react'
 import Button from '../button'
 
 import 'atropos/css'
+import NextImage from '../next-image'
 
 export default function Component9 ({ number }:{number: number}): React.JSX.Element {
   return (
@@ -11,20 +12,20 @@ export default function Component9 ({ number }:{number: number}): React.JSX.Elem
       <div className='flex flex-col md:flex-row justify-center items-center gap-2 w-[80%] md:w-full mx-auto'>
         <Atropos className='md:hover:scale-110 transition-transform md:hover:translate-x-16'>
           <div className=''>
-            <img src={`/images/tv/d${number}-1.png`} alt='' className='' />
+            <NextImage src={`/images/tv/d${number}-1.png`} alt='' className='w-full' />
           </div>
         </Atropos>
         <Atropos className='md:hover:scale-110 transition-transform '>
           <div>
-            <img src={`/images/tv/d${number}-2.png`} alt='' />
+            <NextImage src={`/images/tv/d${number}-2.png`} alt='' className='w-full' />
           </div>
         </Atropos>
         <Atropos className='md:hover:scale-110 transition-transform md:hover:-translate-x-8'>
           <div>
-            <img
+            <NextImage
               src={`/images/tv/d${number}-3.png`}
               alt=''
-              className='bg-grayLight'
+              className='bg-grayLight w-full'
             />
           </div>
         </Atropos>

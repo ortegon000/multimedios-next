@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../button'
+import NextImage from '../next-image'
 
 interface Props {
   cards: any[];
@@ -28,10 +29,10 @@ export default function Component3 ({
             <div className='rounded-md border mb-4 md:mb-0' key={key}>
               <div className='flex md:block'>
                 <span className='w-16 h-16 flex justify-center items-center mx-auto rounded-full border border-grayDark'>
-                  <img
+                  <NextImage
                     src={card.icon}
                     alt=''
-                    className='w-12 object-contain mx-auto'
+                    className='w-12 mx-auto'
                   />
                 </span>
 

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Atropos from 'atropos/react'
 
 import 'atropos/css'
+import NextImage from '../next-image'
 
 export default function Component7 ({ logo, images }: {
   logo: string;
@@ -28,7 +29,7 @@ export default function Component7 ({ logo, images }: {
     <>
       <div className='flex items-center gap-4 justify-center mt-4'>
         <span className='flex justify-center items-center w-20 h-20 rounded-full border border-grayDark'>
-          <img src={logo} alt='' className='h-10 object-cover' />
+          <NextImage src={logo} alt='' className='w-14 object-cover' />
         </span>
         <h1 className='text-3xl font-bold'>CABINA</h1>
       </div>
@@ -43,7 +44,7 @@ export default function Component7 ({ logo, images }: {
             }}
           >
             <Atropos>
-              <img
+              <NextImage
                 src={item.image}
                 alt=''
                 className='object-contain h-full w-full'

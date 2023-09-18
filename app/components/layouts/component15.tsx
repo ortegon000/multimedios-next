@@ -3,13 +3,14 @@ import React from 'react'
 import ZoomImage from '../zoom-image'
 
 import Button from '../button'
+import NextImage from '../next-image'
 
 export default function Component15 ({ images, logo, title, leftLogo = false, logoHeight = 'h-8' }:{images:any[], logo: string, title:string, leftLogo?:boolean, logoHeight?:string}): React.JSX.Element {
   return (
     <>
       <div className={leftLogo ? 'md:flex items-start' : ''}>
         <div className='flex items-end mb-4'>
-          <img src={logo} alt='' className={logoHeight} />
+          <NextImage src={logo} alt='' className={logoHeight} heightFull />
           <h1 className='text-2xl font-bold ml-4'>{title}</h1>
         </div>
 

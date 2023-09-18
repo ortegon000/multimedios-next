@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../button'
+import NextImage from '../next-image'
 
 export default function Component5 ({
   children,
@@ -17,7 +18,7 @@ export default function Component5 ({
       <div className='w-full md:w-7/12 flex gap-2 px-2'>
         <div className='w-24 md:flex hidden'>
           <span className='flex h-20 w-20 justify-center items-center border border-grayDark rounded-full'>
-            <img src={logo} alt='' className='h-14 w-14 object-contain' />
+            <NextImage src={logo} alt='' className='h-14 w-14 flex items-center' />
           </span>
         </div>
 
@@ -25,7 +26,7 @@ export default function Component5 ({
           <h1 className='my-4 text-3xl font-bold flex items-center justify-between'>
             {title}
             <span className='flex justify-center items-center p-2 border border-grayDark rounded-full bg-grayLight md:hidden'>
-              <img src={logo} alt='' className='h-12 w-12 object-contain' />
+              <NextImage src={logo} alt='' className='h-12 w-12 flex items-center' />
             </span>
           </h1>
 
