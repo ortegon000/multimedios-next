@@ -1,4 +1,5 @@
 import React from 'react'
+import NextImage from './next-image'
 
 export default function CircleLeft ({ image, className }: {
   image: string;
@@ -19,7 +20,7 @@ export default function CircleLeft ({ image, className }: {
         <span className='transform -translate-y-1.5 block w-3 h-3 rounded-full bg-grayDark' />
       </div>
 
-      <img src={image} alt='' className='w-[450px]' />
+      <NextImage src={image} alt='' className='w-[450px] h-[450px]' />
     </div>
   )
 }

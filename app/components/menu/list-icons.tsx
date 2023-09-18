@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import IconDots from './icon-dots'
+import NextImage from '../next-image'
 
 export default function ListIcons (): React.JSX.Element {
   const menu = [
@@ -70,7 +71,7 @@ export default function ListIcons (): React.JSX.Element {
 
               <Link href={item.url} className='absolute z-50 w-full h-full block rounded-full'>
                 <span className='icon absolute inset-0 flex justify-center items-center'>
-                  <img src={item.icon} alt='icon' className='h-10 w-10' />
+                  <NextImage src={item.icon} alt='icon' className='h-10 w-10' />
                 </span>
 
                 <div className='hoverIcon opacity-0 absolute inset-0 flex justify-center items-center'>
@@ -85,10 +86,10 @@ export default function ListIcons (): React.JSX.Element {
                       </span>
                       )
                     : (
-                      <img
+                      <NextImage
                         src={item.iconHover}
                         alt={`icono ${item.name}`}
-                        className='h-10'
+                        className='h-10 w-10'
                       />
                       )}
                 </div>

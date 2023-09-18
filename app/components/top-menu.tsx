@@ -1,6 +1,7 @@
 import React from 'react'
 import TopMenuLine from './top-menu-line'
 import Link from 'next/link'
+import NextImage from './next-image'
 
 const menu = [
   {
@@ -86,17 +87,17 @@ export default function TopMenu ({
                   ? (
                       item.iconActive !== undefined
                         ? (
-                          <img src={item.iconActive} className='h-8' />
+                          <NextImage alt='' src={item.iconActive} className='h-8 w-8' />
                           )
                         : (
                             item.name
                           )
                     )
                   : (
-                    <img
+                    <NextImage
                       src={item.icon}
                       alt={`icono ${item.name}`}
-                      className='h-8'
+                      className='h-8 w-8'
                     />
                     )}
               </Link>

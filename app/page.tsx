@@ -1,10 +1,11 @@
-'use client'
-import React, { useEffect } from 'react'
+// 'use client'
+// import React, { useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { redirect } from 'next/navigation'
 
 import { Metadata } from 'next'
+import NextImage from './components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios',
@@ -12,8 +13,6 @@ export const metadata: Metadata = {
 }
 
 function Home (): React.JSX.Element {
-  useEffect(() => redirect('/menu'))
-
   // useEffect(() => {
   //   const video = document.getElementById("intro-video");
   //   const content = document.getElementById("content");
@@ -74,17 +73,21 @@ function Home (): React.JSX.Element {
         <div className='text-white w-full' id='content'>
           <h1 className='text-7xl mb-10 m-auto text-center hover:font-bold transition-all transform hover:scale-105 w-full max-w-sm'>
             <Link href='/menu' id='menu-link'>
-              <img src='/images/logo_white.svg' />
+              <NextImage src='/images/logo_white.svg' className='w-[95%] h-10 mx-auto' />
             </Link>
           </h1>
 
-          <ul className='flex justify-center items-center gap-6 [&>li>img]:h-12 px-4'>
+          <ul className='flex justify-center items-center gap-6 px-4'>
             {menu.map((item, key) => (
               <li key={key}>
-                <img src={item.image} />
+                <NextImage src={item.image} className='h-12 w-12' />
               </li>
             ))}
           </ul>
+
+          <div className='mt-10 flex justify-center items-center'>
+            <Link href='/menu' className='px-6 py-3 border border-white rounded-md hover:underline tracking-widest'>ABRIR PRESENTACIÓN</Link>
+          </div>
         </div>
       </main>
     </>

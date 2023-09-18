@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'
+import NextImage from './next-image'
 
 export default function BottomMenu ({
   section = 'undefined'
@@ -46,7 +47,7 @@ export default function BottomMenu ({
             <span className='group-hover:bg-grayDark px-2 group-hover:text-grayLight rounded-full py-1 transition-all'>
               Atrás
             </span>
-            <img src='/images/back_arrow.png' alt='' className='h-10' />
+            <NextImage src='/images/back_arrow.png' alt='' className='h-10 w-10' />
           </Link>
         </div>
       )}
@@ -66,7 +67,7 @@ export default function BottomMenu ({
             href={nextPath}
             className='group flex items-center justify-center transition'
           >
-            <img src='/images/next_arrow.png' alt='' className='h-10' />
+            <NextImage src='/images/next_arrow.png' alt='' className='h-10 w-10' />
             <span className='group-hover:bg-grayDark px-2 group-hover:text-grayLight rounded-full py-1 transition-all'>
               Siguiente
             </span>
