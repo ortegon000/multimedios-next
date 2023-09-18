@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { Metadata } from 'next'
+import { redirect } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: 'Multimedios',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
 }
 
 function Home (): React.JSX.Element {
+  return redirect('/menu')
+
   // useEffect(() => {
   //   const video = document.getElementById("intro-video");
   //   const content = document.getElementById("content");
