@@ -4,6 +4,7 @@ import React from 'react'
 import Button from '../../components/button'
 
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Tv 1',
@@ -19,10 +20,10 @@ export default function Tv1 (): React.JSX.Element {
         <section className='tv-d1 mx-auto max-w-4xl mt-4 flex justify-center md:justify-end items-center px-2'>
           <div className='w-full max-w-lg bg-grayLight/50 backdrop-blur rounded-md p-2'>
             <div className='flex w-full gap-2'>
-              <img
+              <NextImage
                 src='/images/logo.png'
                 alt=''
-                className='w-32 object-contain'
+                className='w-32'
               />
               <div className='w-full'>
                 <h1 className='text-3xl font-bold'>Televisión en vivo.</h1>

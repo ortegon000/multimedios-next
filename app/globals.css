@@ -100,10 +100,10 @@
   position: relative;
   overflow: hidden;
 }
-.radio-1 .card.animated > img {
+.radio-1 .card.animated img {
   transition: transform 0.3s ease-in-out;
 }
-.radio-1 .card:hover.animated > img {
+.radio-1 .card:hover.animated img {
   transform: translateY(-2rem) scale(1.25);
 }
 

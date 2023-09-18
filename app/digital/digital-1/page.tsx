@@ -2,6 +2,7 @@ import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
 import Button from '@/app/components/button'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Digital 1',
@@ -25,7 +26,7 @@ function Digital (): React.JSX.Element {
             <div className='grid grid-cols-3 bg-grayLight/50 backdrop-blur rounded-md p-2 text-sm gap-4'>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-1.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-1.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>50,735,054</strong><br />
                   <span>Usuarios Únicos A total sitios</span>
@@ -33,7 +34,7 @@ function Digital (): React.JSX.Element {
               </div>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-2.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-2.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>20.8 M</strong><br />
                   <span>Fans Totales en Redes Sociales Institucionales</span>
@@ -41,7 +42,7 @@ function Digital (): React.JSX.Element {
               </div>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-3.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-3.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>9.5 M</strong><br />
                   <span>Suscriptores a total canales Institucionales</span>
@@ -49,7 +50,7 @@ function Digital (): React.JSX.Element {
               </div>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-4.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-4.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>128,040,221</strong><br />
                   <span>Páginas vistas</span>
@@ -57,7 +58,7 @@ function Digital (): React.JSX.Element {
               </div>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-5.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-5.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>13.8 M</strong><br />
                   <span>Cuentas Total perfiles Institucionales</span>
@@ -65,7 +66,7 @@ function Digital (): React.JSX.Element {
               </div>
 
               <div className='mb-4 md:flex'>
-                <img src='/images/digital/d1-6.png' alt='' className='h-12 mx-auto md:ml-0 md:mr-2' />
+                <NextImage src='/images/digital/d1-6.png' alt='' className='h-12 w-12 mx-auto md:ml-0 md:mr-2' />
                 <p className='text-center md:text-left'>
                   <strong>2.5 M</strong><br />
                   <span>Followers Total perfiles Institucionales</span>
@@ -76,11 +77,11 @@ function Digital (): React.JSX.Element {
           </div>
 
           <div className='md:w-1/3'>
-            <img src='/images/digital/d1-8.png' alt='' className='h-8 mt-2 mx-auto md:ml-0' />
+            <NextImage src='/images/digital/d1-8.png' alt='' className='w-full max-w-sm mt-2 mx-auto md:ml-0' />
             <div className='relative md:pb-24 mb-4 md:mb-0'>
               <p className='md:absolute text-center md:text-left text-xl -left-16'>El sitio de noticias <strong className='text-2xl'>#1 en México</strong></p>
             </div>
-            <img src='/images/digital/d1-7.png' alt='' />
+            <NextImage src='/images/digital/d1-7.png' alt='' className='w-full' />
           </div>
         </div>
 

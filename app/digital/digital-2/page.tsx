@@ -2,6 +2,7 @@ import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
 import Link from 'next/link'
+import NextImage from '@/app/components/next-image'
 
 const buttons = [
   {
@@ -61,14 +62,14 @@ function Digital (): React.JSX.Element {
     <ContentLayout section='digital'>
       <section className='max-w-4xl mx-auto px-2 mt-4'>
         <div className='mb-4'>
-          <img src='/images/m.png' alt='' className='h-12 mx-auto' />
+          <NextImage src='/images/m.png' alt='' className='h-12 w-12 mx-auto' />
           <p className='text-center mt-2'>HOLDING DIGITAL</p>
         </div>
         <div className='flex flex-wrap gap-4 justify-center'>
           {
             buttons.map((button, key) => (
               <Link href={button.url} key={key} className='flex justify-center items-center p-2 border border-grayDark rounded-md w-[40%] md:w-[30%] hover:scale-110 transition-transform bg-grayLight'>
-                <img src={button.logo} alt='' className={button.height} />
+                <NextImage src={button.logo} alt='' className={button.height} heightFull />
               </Link>
             ))
           }

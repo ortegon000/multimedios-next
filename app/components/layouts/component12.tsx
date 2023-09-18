@@ -3,6 +3,7 @@ import React from 'react'
 import Atropos from 'atropos/react'
 
 import 'atropos/css'
+import NextImage from '../next-image'
 
 export default function Component12 ({ images, title, subtitle = 'MILENIO DIARIO' }:{images:any[], title: string, subtitle?: string}): React.JSX.Element {
   return (
@@ -15,7 +16,7 @@ export default function Component12 ({ images, title, subtitle = 'MILENIO DIARIO
             images.map((image, key) => (
               <div key={key}>
                 <Atropos>
-                  <img src={image.image} alt='' className='w-[80%] md:w-full mx-auto' />
+                  <NextImage src={image.image} alt='' className='w-[80%] md:w-full mx-auto' />
                 </Atropos>
                 <p className='text-center mt-2 max-w-[80%] mx-auto'>{image.description}</p>
               </div>

@@ -4,6 +4,7 @@ import Component2 from '../../components/layouts/component2'
 import ZoomImage from '@/app/components/zoom-image'
 
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Tv 2',
@@ -76,10 +77,10 @@ function Col2 (): React.JSX.Element {
           <span className='text-3xl font-bold'>24 Ciudades</span>
           <br />
           <span className='text-xl'>Regionales</span>
-          <img
+          <NextImage
             src='/images/tv/map-icon.png'
             alt=''
-            className='radio-users-icon w-12 h-12 absolute bg-grayDark rounded-full border border-white top-0 left-0'
+            className='radio-users-icon w-12 h-12 !absolute bg-grayDark rounded-full border border-white top-0 left-0'
           />
         </div>
 

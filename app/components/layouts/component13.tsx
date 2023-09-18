@@ -3,12 +3,13 @@ import React from 'react'
 
 import 'atropos/css'
 import Button from '../button'
+import NextImage from '../next-image'
 
 export default function Component13 ({ images, logo, list = [] }:{images:any[], logo: string, list: any[]}): React.JSX.Element {
   return (
     <>
       <div className='my-2'>
-        <img src={logo} alt='' className='h-10 mx-auto' />
+        <NextImage src={logo} alt='' className='h-10 mx-auto' heightFull imageClassName='mx-auto' />
       </div>
 
       <div className='md:flex mt-4 items-center'>
@@ -29,7 +30,7 @@ export default function Component13 ({ images, logo, list = [] }:{images:any[], 
           {
             images.map((image, key) => (
               <div className='flex items-center' key={key}>
-                <img src={image.image} alt='' className='h-12 mr-2' />
+                <NextImage src={image.image} alt='' className='h-12 w-12 mr-2' />
                 <div>
                   <p className='font-bold text-xl'>{image.title}</p>
                   <p className='text-sm'>{image.subtitle}</p>

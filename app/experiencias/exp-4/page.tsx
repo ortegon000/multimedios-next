@@ -2,6 +2,7 @@ import ContentLayout from '../../content-layout'
 import React from 'react'
 import { Metadata } from 'next'
 import CircleLeft from '@/app/components/circle-left'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Experiancias 4',
@@ -15,7 +16,7 @@ export default function RadioD1 (): React.JSX.Element {
         <CircleLeft image='/images/experiencias/d4-1.png' />
         <section className='max-w-2xl mx-auto px-2 mt-4'>
           <div className='bg-grayLight/70 backdrop-blur p-2 rounded-md'>
-            <img src='/images/experiencias/d4-2.png' alt='' className='h-20 mx-auto' />
+            <NextImage src='/images/experiencias/d4-2.png' alt='' className='w-32 mx-auto' />
             <p className='text-lg font-bold mt-4'>
               Además, está en el corazón del corporativo, con lo cual hay salidas en vivo en Milenio TV, en streaming por Milenio.com, en las redes sociales (Facebook Live y Twitter). Hay notas previas, una cobertura especial posterior en Milenio Diario y un programa especial en Milenio TV el fin de semana siguiente.
             </p>

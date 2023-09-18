@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import CardBgBlur from '@/app/components/card-bg-blue'
 import VideoPlayer from '@/app/components/video-player'
 import Button from '@/app/components/button'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Digital 21',
@@ -20,7 +21,7 @@ function Digital (): React.JSX.Element {
         <CardBgBlur>
           <>
             <div className='md:flex mb-4'>
-              <img src='/images/digital/d21_1.png' alt='' className='h-12' />
+              <NextImage src='/images/digital/d21_1.png' alt='' className='w-24' />
               <div className=''>
                 <div className='rounded-md overflow-hidden'>
                   <VideoPlayer video='/videos/intro.webm' />

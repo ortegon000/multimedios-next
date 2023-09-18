@@ -2,6 +2,7 @@ import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
 import Link from 'next/link'
+import NextImage from '@/app/components/next-image'
 
 const buttons = [
   {
@@ -70,7 +71,7 @@ function Digital (): React.JSX.Element {
           {
             buttons.map((button, key) => (
               <Link href={button.url} key={key} className='flex justify-center items-center p-2 border border-grayDark rounded-md w-[40%] md:w-[18%] hover:scale-110 transition-transform bg-grayLight'>
-                <img src={button.logo} alt='' className={button.height} />
+                <NextImage src={button.logo} alt='' className={button.height} heightFull />
               </Link>
             ))
           }

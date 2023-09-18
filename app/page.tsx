@@ -73,7 +73,7 @@ function Home (): React.JSX.Element {
         <div className='text-white w-full' id='content'>
           <h1 className='text-7xl mb-10 m-auto text-center hover:font-bold transition-all transform hover:scale-105 w-full max-w-sm'>
             <Link href='/menu' id='menu-link'>
-              <NextImage src='/images/logo_white.svg' className='w-[95%] h-10 mx-auto' />
+              <NextImage src='/images/logo_white.svg' className='w-full mx-auto' />
             </Link>
           </h1>
 

@@ -3,6 +3,7 @@ import CircleLeft from '../../components/circle-left'
 import Link from 'next/link'
 import React from 'react'
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Radio 5',
@@ -89,10 +90,10 @@ export default function RadioD5 (): React.JSX.Element {
                 >
                   <Link href={item.url} className='group'>
                     <span className='w-20 h-20 flex justify-center items-center mx-auto rounded-full border border-grayDark bg-grayLight'>
-                      <img
+                      <NextImage
                         src={item.image}
                         alt=''
-                        className='w-14 object-contain mx-auto'
+                        className='w-14 mx-auto'
                       />
                     </span>
 

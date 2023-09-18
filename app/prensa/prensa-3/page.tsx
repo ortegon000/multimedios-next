@@ -1,6 +1,7 @@
 import React from 'react'
 import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Prensa 3',
@@ -127,7 +128,7 @@ function Prensa (): React.JSX.Element {
           {
             faces.map((item, key) => (
               <div key={key} className='text-grayLight text-xs flex flex-col justify-center group'>
-                <img src={item.image} alt='' className='h-16 w-16 rounded-full object-contain mx-auto group-hover:scale-110 transition-transform' />
+                <NextImage src={item.image} alt='' className='h-16 w-16 rounded-full object-contain mx-auto group-hover:scale-110 transition-transform' />
                 <div className='group-hover:text-white mt-1'>
                   <span className='text-center block'>{item.name}</span>
                   <strong className='text-center block'> {item.lastName}</strong>

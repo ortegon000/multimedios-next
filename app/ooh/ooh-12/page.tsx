@@ -3,6 +3,7 @@ import ContentLayout from '../../content-layout'
 import Button from '@/app/components/button'
 
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - OOH 12',
@@ -20,7 +21,7 @@ export default function OOH12 (): React.JSX.Element {
 
         <div className='md:flex gap-2'>
           <div className='mt-4 flex flex-col md:flex-row px-2 gap-2'>
-            <img src='/images/ooh/d12.png' alt='' className='rounded-md mx-auto object-cover max-w-md' />
+            <NextImage src='/images/ooh/d12.png' alt='' className='rounded-md mx-auto object-cover w-full max-w-md' />
           </div>
           <div className='mt-4 p-2 bg-grayLight/70 rounded-md backdrop-blur max-w-md mx-auto text-sm'>
             <p>

@@ -2,6 +2,7 @@ import React from 'react'
 import ContentLayout from '../../content-layout'
 import Button from '@/app/components/button'
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Prensa 1',
@@ -40,7 +41,7 @@ function Prensa (): React.JSX.Element {
     <ContentLayout section='prensa'>
       <section className='max-w-4xl mx-auto px-2 mt-4 md:flex'>
         <div>
-          <img src='/images/prensa/d2.png' alt='' className='hover:scale-110 w-[80%] md:w-[95%] mx-auto transition-transform hover:rotate-12' />
+          <NextImage src='/images/prensa/d2.png' alt='' className='hover:scale-110 w-[80%] md:w-[95%] mx-auto transition-transform hover:rotate-12' />
         </div>
 
         <div className='w-full border border-grayDark bg-grayLight/50 backdrop-blur rounded-md p-4'>

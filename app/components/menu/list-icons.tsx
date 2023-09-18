@@ -58,7 +58,7 @@ export default function ListIcons (): React.JSX.Element {
   return (
     <div className='overflow-hidden py-4'>
       <div className='relative'>
-        <img src='/images/icons_list.png' alt='' className='block w-[95%] mx-auto' />
+        <NextImage src='/images/icons_list.png' alt='' className='flex w-[95%] mx-auto' />
 
         <ul className='icons-list'>
           {menu.map((item, key) => (
@@ -71,7 +71,7 @@ export default function ListIcons (): React.JSX.Element {
 
               <Link href={item.url} className='absolute z-50 w-full h-full block rounded-full'>
                 <span className='icon absolute inset-0 flex justify-center items-center'>
-                  <NextImage src={item.icon} alt='icon' className='h-10 w-10' />
+                  <NextImage src={item.icon} alt='icon' className='h-8 w-8 md:w-10 md:h-10' />
                 </span>
 
                 <div className='hoverIcon opacity-0 absolute inset-0 flex justify-center items-center'>
@@ -89,7 +89,7 @@ export default function ListIcons (): React.JSX.Element {
                       <NextImage
                         src={item.iconHover}
                         alt={`icono ${item.name}`}
-                        className='h-10 w-10'
+                        className='h-8 w-8 md:w-10 md:h-10'
                       />
                       )}
                 </div>

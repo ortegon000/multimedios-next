@@ -3,6 +3,7 @@ import Component1 from '../../components/layouts/component1'
 import Button from '../../components/button'
 import React from 'react'
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Radio 1',
@@ -26,7 +27,7 @@ export default function RadioD1 (): React.JSX.Element {
 function Col1 (): React.JSX.Element {
   return (
     <article className='card bg-grayDark animated h-full'>
-      <img
+      <NextImage
         src='/images/radio/chica_con_microfono.png'
         alt='chica con microfono'
         className='h-full w-2/3 md:w-full float-left object-cover rounded-md'
@@ -57,7 +58,7 @@ function Col2 (): React.JSX.Element {
         en el top of mind de los radioescuchas y dentro del top ten con todas
         nuestras estaciones.
       </p>
-      <img
+      <NextImage
         src='/images/line_dot.png'
         alt='linea con un punto centrado'
         className='my-4 mx-auto w-52'
@@ -75,7 +76,7 @@ function Col2 (): React.JSX.Element {
 function Col3 (): React.JSX.Element {
   return (
     <article className='card bg-grayDark animated h-full'>
-      <img
+      <NextImage
         src='/images/radio/chica_con_audifonos.png'
         alt='chica con microfono'
         className='h-full w-2/3 md:w-full object-cover rounded-md float-right'

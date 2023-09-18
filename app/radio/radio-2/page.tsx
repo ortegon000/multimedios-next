@@ -5,6 +5,7 @@ import Button from '../../components/button'
 import ZoomImage from '@/app/components/zoom-image'
 
 import { Metadata } from 'next'
+import NextImage from '@/app/components/next-image'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Radio 2',
@@ -47,10 +48,10 @@ function Col2 (): React.JSX.Element {
         <br />
         <span className='text-xl'>personas nos escuchan.</span>
 
-        <img
+        <NextImage
           src='/images/radio/users-icon.png'
           alt=''
-          className='radio-users-icon w-12 h-12 absolute bg-grayDark rounded-full border border-white top-0 left-0'
+          className='radio-users-icon w-12 h-12 !absolute bg-grayDark rounded-full border border-white top-0 left-0'
         />
       </div>
 

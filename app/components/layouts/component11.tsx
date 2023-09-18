@@ -4,6 +4,7 @@ import Atropos from 'atropos/react'
 import Button from '../button'
 
 import 'atropos/css'
+import NextImage from '../next-image'
 
 export default function Component11 ({ images, title, subtitle = 'PUBLICIDAD EXTERIOR', description }:{images:any[], title: string, subtitle?: string, description:string}): React.JSX.Element {
   return (
@@ -16,7 +17,7 @@ export default function Component11 ({ images, title, subtitle = 'PUBLICIDAD EXT
         {
             images.map((item, key) => (
               <Atropos key={key} className='mx-auto'>
-                <img src={item} alt='' className='rounded-md mx-auto' />
+                <NextImage src={item} alt='' className='rounded-md overflow-hidden mx-auto w-full' />
               </Atropos>
             ))
           }
