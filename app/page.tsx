@@ -1,10 +1,10 @@
-// import React, { useEffect } from 'react'
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
 import { Metadata } from 'next'
-import { redirect } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: 'Multimedios',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 function Home (): React.JSX.Element {
-  return redirect('/menu')
+  useEffect(() => redirect('/menu'))
 
   // useEffect(() => {
   //   const video = document.getElementById("intro-video");

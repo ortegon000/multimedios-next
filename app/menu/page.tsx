@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 function Menu (): React.JSX.Element {
   return (
     <>
-      <main className='min-h-screen flex md:items-center justify-center max-w-2xl m-auto'>
+      <main className='min-h-screen flex items-center justify-center max-w-2xl m-auto'>
         <div className='w-full'>
           <div>
             <h1 className='relative my-4 mx-auto text-center w-full max-w-sm h-16'>
