@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import ZoomImage from '@/app/components/zoom-image'
 
 export const metadata: Metadata = {
-  title: 'Multimedios - Experiancias 8',
+  title: 'Multimedios - Experiancias 9',
   description: 'Presentación multimedios'
 }
 
@@ -18,7 +18,7 @@ export default function RadioD1 (): React.JSX.Element {
 
           <div className='mt-4 md:flex px-4'>
             <div className='mb-6 md:mb-0'>
-              <ZoomImage image='/images/experiencias/d7.png' />
+              <ZoomImage image='/images/experiencias/d9-1.png' />
               <div className='flex justify-center'>
                 <span className='bg-grayDark roudned-full text-grayLight px-4 py-2 mt-2 inline-block rounded-md'>
                   Lunes - Viernes
@@ -26,7 +26,7 @@ export default function RadioD1 (): React.JSX.Element {
               </div>
             </div>
             <div className='mb-6 md:mb-0'>
-              <ZoomImage image='/images/experiencias/d7.png' />
+              <ZoomImage image='/images/experiencias/d9-2.png' />
               <div className='flex justify-center'>
                 <span className='bg-grayDark roudned-full text-grayLight px-4 py-2 mt-2 inline-block rounded-md'>
                   Sábado - Domingo
@@ -34,7 +34,7 @@ export default function RadioD1 (): React.JSX.Element {
               </div>
             </div>
             <div className='mb-6 md:mb-0'>
-              <ZoomImage image='/images/experiencias/d7.png' />
+              <ZoomImage image='/images/experiencias/d9-3.png' />
             </div>
           </div>
         </section>
