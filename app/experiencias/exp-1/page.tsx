@@ -26,7 +26,7 @@ export default function RadioD1 (): React.JSX.Element {
             </div>
 
             <div className='flex justify-center'>
-              <Button url='#' text='VER MÁS' dark />
+              <Button url='/experiencias/exp-2' text='VER MÁS' dark />
             </div>
           </div>
 
