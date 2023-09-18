@@ -26,11 +26,12 @@ export default function RadioD1 (): React.JSX.Element {
 
 function Col1 (): React.JSX.Element {
   return (
-    <article className='card bg-grayDark animated h-full'>
+    <article className='card bg-grayDark hover:bg-red-300 transition-colors animated h-full'>
       <NextImage
         src='/images/radio/chica_con_microfono.png'
         alt='chica con microfono'
         className='h-full w-2/3 md:w-full float-left object-cover rounded-md'
+        heightFull
       />
 
       <div className='card-info absolute top-10 right-4'>
@@ -75,11 +76,12 @@ function Col2 (): React.JSX.Element {
 
 function Col3 (): React.JSX.Element {
   return (
-    <article className='card bg-grayDark animated h-full'>
+    <article className='card bg-grayDark hover:bg-red-300 transition-colors animated h-full'>
       <NextImage
         src='/images/radio/chica_con_audifonos.png'
         alt='chica con microfono'
-        className='h-full w-2/3 md:w-full object-cover rounded-md float-right'
+        className='h-full md:w-full rounded-md'
+        heightFull
       />
 
       <div className='card-info absolute bottom-20 left-4'>
