@@ -1,14 +1,17 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Atropos from 'atropos/react'
 
 import 'atropos/css'
 import Button from '../button'
 import NextImage from '../next-image'
+import VideoPlayer from '../video-player'
 
-export default function Component14 ({ image, logo, social, socialText, data, bottomText }:{image:string, logo: string, social:string, socialText:string, data:any[], bottomText: string}): React.JSX.Element {
+export default function Component14 ({ image, logo, social, socialText, data, bottomText, video = '/videos/intro.webm' }:{image:string, logo: string, social:string, socialText:string, data:any[], bottomText: string, video?:string}): React.JSX.Element {
+  const [videoOpen, setVideoOpen] = useState(false)
+
   return (
-    <div className='flex'>
+    <div className='flex relative'>
       <div className='w-1/2 md:w-1/3'>
         <Atropos>
           <NextImage src={image} alt='' className='rounded w-full' />
@@ -40,9 +43,19 @@ export default function Component14 ({ image, logo, social, socialText, data, bo
         <p className='text-sm mb-4'>{bottomText}</p>
 
         <div className='flex'>
-          <Button url='#' text='Ver Video' dark />
+          <button type='button' className='bg-grayDark text-grayLight px-4 py-1 rounded-md hover:bg-grayDark-900' onClick={() => setVideoOpen(true)}>Ver video</button>
         </div>
       </div>
+
+      {/* video modal */}
+      {
+        videoOpen && (
+          <div className='bg-grayLight absolute w-full h-full inset-0 m-auto rounded-md flex items-center z-10'>
+            <VideoPlayer video={video} />
+            <button type='button' className='bg-red-500 absolute top-2 right-2 text-white px-4 py-1 rounded-md' onClick={() => setVideoOpen(false)}>Cerrar</button>
+          </div>
+        )
+      }
     </div>
   )
 }

@@ -3,7 +3,7 @@ import ContentLayout from '../../content-layout'
 import { Metadata } from 'next'
 
 import CardBgBlur from '@/app/components/card-bg-blue'
-import Component13 from '@/app/components/layouts/component14'
+import Component14 from '@/app/components/layouts/component14'
 
 export const metadata: Metadata = {
   title: 'Multimedios - Digital 14',
@@ -40,7 +40,7 @@ function Digital (): React.JSX.Element {
       <>
         <h1 className='text-2xl font-bold text-center my-2'>CASOS DE ÉXITO</h1>
         <CardBgBlur>
-          <Component13 image={image} logo={logo} social={social} socialText={socialText} data={data} bottomText={bottomText} />
+          <Component14 image={image} logo={logo} social={social} socialText={socialText} data={data} bottomText={bottomText} />
         </CardBgBlur>
       </>
     </ContentLayout>
