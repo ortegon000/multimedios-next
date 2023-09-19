@@ -89,7 +89,7 @@ export default function ListIcons (): React.JSX.Element {
                       <NextImage
                         src={item.iconHover}
                         alt={`icono ${item.name}`}
-                        className='h-8 w-8 md:w-10 md:h-10'
+                        className='h-8 w-8 md:w-10 md:h-10 flex items-center'
                       />
                       )}
                 </div>

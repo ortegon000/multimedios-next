@@ -72,7 +72,7 @@ function Col2 (): React.JSX.Element {
   return (
     <div className='relative transition rounded-md mt-8 md:mt-0'>
 
-      <div className='md:absolute top-0 right-0 z-10 bg-grayLight md:bg-transparent'>
+      <div className='md:absolute top-0 right-0 z-10 bg-grayLight rounded-md md:bg-transparent'>
         <div className='bg-grayDark text-grayLight rounded-md p-4 max-w-xs mx-auto relative'>
           <span className='text-3xl font-bold'>24 Ciudades</span>
           <br />
@@ -92,7 +92,7 @@ function Col2 (): React.JSX.Element {
       </div>
 
       <div className='md:pt-12 md:pr-12 pt-0 pr-0'>
-        <ZoomImage image='/images/tv/cobertura-map.png' className='max-w-md md:bg-transparent mx-auto' />
+        <ZoomImage image='/images/tv/cobertura-map.png' className='max-w-md md:bg-transparent mx-auto p-2' />
       </div>
     </div>
   )
