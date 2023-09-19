@@ -6,7 +6,7 @@ import Button from '../../components/button'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Multimedios - Radio 9',
+  title: 'Multimedios - Radio 10',
   description: 'Presentación multimedios'
 }
 
@@ -15,7 +15,7 @@ const image = '/images/radio/circle-left-5.png'
 const logo = '/images/radio/fmtu.png'
 const section = 'radio 10'
 const background = '2'
-const audio = '/audios/radio/1.mp3'
+const audio = '/audios/radio/fmtu.mp3'
 
 export default function RadioD10 (): React.JSX.Element {
   return (

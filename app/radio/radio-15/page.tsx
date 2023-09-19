@@ -14,7 +14,7 @@ const image = '/images/radio/circle-left-8.png'
 const logo = '/images/radio/aw.png'
 const section = 'radio 15'
 const background = '2'
-const audio = '/audios/radio/1.mp3'
+const audio = '/audios/radio/la-gran-aw.mp3'
 
 export default function RadioD15 (): React.JSX.Element {
   return (

@@ -37,7 +37,7 @@ export default function BottomMenu ({
   const limit = result[0]?.limit
 
   return (
-    <div className='absolute bg-white/50 rounded-lg backdrop-blur right-4 bottom-4 flex flex-row items-center justify-end gap-4'>
+    <div className='md:absolute fixed bg-white/50 rounded-lg backdrop-blur shadow right-4 bottom-4 flex flex-row items-center justify-end gap-4 border border-grayDark-200'>
       {number > 1 && (
         <div>
           <Link

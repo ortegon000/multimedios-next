@@ -80,7 +80,7 @@ function Home (): React.JSX.Element {
           <ul className='flex justify-center items-center gap-6 px-4'>
             {menu.map((item, key) => (
               <li key={key}>
-                <NextImage src={item.image} className='h-12 w-12' />
+                <NextImage src={item.image} className='h-8 w-8' />
               </li>
             ))}
           </ul>

@@ -18,7 +18,7 @@ export default function Component3 ({
   subsection
 }: Props): React.JSX.Element {
   return (
-    <section className={`${subsection} max-w-4xl mx-auto mt-4`}>
+    <section className={`${subsection} max-w-4xl mx-auto mt-4 p-2`}>
       <section className='flex relative'>
         <div className='bg-blur blur-md absolute w-[120%] h-[120%] -translate-x-[10%] -z-10 inset-0 m-auto' />
 

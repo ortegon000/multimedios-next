@@ -14,7 +14,7 @@ export default function ContentLayout ({
   background?: string;
 }): React.JSX.Element {
   return (
-    <div className={`background-content-${background} relative w-full min-h-screen pb-20 overflow-hidden`}>
+    <div className={`background-content-${background} relative w-full min-h-screen pb-24 overflow-hidden`}>
       <TopMenu section={section} />
 
       <motion.div

@@ -30,7 +30,7 @@ function Col1 (): React.JSX.Element {
       <NextImage
         src='/images/radio/chica_con_microfono.png'
         alt='chica con microfono'
-        className='h-full w-2/3 md:w-full float-left object-cover rounded-md'
+        className='h-full w-2/3 md:w-full rounded-md'
         heightFull
       />
 
@@ -80,7 +80,7 @@ function Col3 (): React.JSX.Element {
       <NextImage
         src='/images/radio/chica_con_audifonos.png'
         alt='chica con microfono'
-        className='h-full md:w-full rounded-md'
+        className='h-full md:w-full rounded-md float-right'
         heightFull
       />
 
