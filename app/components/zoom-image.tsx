@@ -12,7 +12,7 @@ export default function ZoomImage ({ image, className }:{image:string, className
         width={0}
         height={0}
         sizes='100vw'
-        className={`${className} w-full bg-grayLight rounded-md hover:bg-white transition`}
+        className={`${className} w-full bg-grayLight/60 backdrop-blur rounded-md hover:bg-white transition`}
         style={
           {
             width: '100%',

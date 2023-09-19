@@ -17,8 +17,8 @@ export default function Component12 ({ images, title, subtitle = 'MILENIO DIARIO
               <div key={key}>
                 <Atropos>
                   <NextImage src={image.image} alt='' className='w-[80%] md:w-full mx-auto' />
+                  <p className='text-center mt-2 max-w-[80%] mx-auto bg-grayLight rounded-md' data-atropos-offset='5'>{image.description}</p>
                 </Atropos>
-                <p className='text-center mt-2 max-w-[80%] mx-auto'>{image.description}</p>
               </div>
 
             ))

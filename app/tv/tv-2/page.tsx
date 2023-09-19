@@ -70,7 +70,7 @@ function Col1 (): React.JSX.Element {
 
 function Col2 (): React.JSX.Element {
   return (
-    <div className='relative hover:bg-white transition rounded-md mt-8 md:mt-0'>
+    <div className='relative transition rounded-md mt-8 md:mt-0'>
 
       <div className='md:absolute top-0 right-0 z-10 bg-grayLight md:bg-transparent'>
         <div className='bg-grayDark text-grayLight rounded-md p-4 max-w-xs mx-auto relative'>
@@ -91,7 +91,9 @@ function Col2 (): React.JSX.Element {
         </div>
       </div>
 
-      <ZoomImage image='/images/tv/cobertura-map.png' className='max-w-md md:bg-transparent' />
+      <div className='md:pt-12 md:pr-12 pt-0 pr-0'>
+        <ZoomImage image='/images/tv/cobertura-map.png' className='max-w-md md:bg-transparent mx-auto' />
+      </div>
     </div>
   )
 }

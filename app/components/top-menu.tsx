@@ -87,7 +87,7 @@ export default function TopMenu ({
                   ? (
                       item.iconActive !== undefined
                         ? (
-                          <NextImage alt='' src={item.iconActive} className='h-8 w-8' />
+                          <NextImage alt='' src={item.iconActive} className='h-8 w-8 flex items-center' />
                           )
                         : (
                             item.name
