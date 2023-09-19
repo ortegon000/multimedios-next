@@ -19,7 +19,7 @@ export default function RadioD1 (): React.JSX.Element {
             <NextImage src='/images/experiencias/lines_arrow.png' alt='' className='hidden md:flex absolute top-1/2 w-[80%] left-1/2 -translate-x-1/2' />
           </h1>
 
-          <div className='mt-4 flex flex-col md:flex-row md:mt-16 gap-4 px-8 items-center'>
+          <div className='mt-4 flex flex-col md:flex-row md:mt-0 gap-4 px-8 items-center'>
             <div>
               <ZoomImage image='/images/experiencias/d3-1.png' />
               <p className='text-xl font-bold text-center'>Prensa</p>
@@ -29,7 +29,7 @@ export default function RadioD1 (): React.JSX.Element {
               <p className='text-xl font-bold text-center'>Televisión</p>
             </div>
             <div>
-              <div className='flex items-center gap-2'>
+              <div className='flex items-start gap-2'>
                 <ZoomImage image='/images/experiencias/d3-3.png' />
                 <ZoomImage image='/images/experiencias/d3-4.png' />
               </div>

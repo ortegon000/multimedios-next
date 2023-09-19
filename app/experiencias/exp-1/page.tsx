@@ -44,7 +44,7 @@ export default function RadioD1 (): React.JSX.Element {
               </p>
             </div>
             <div className='flex justify-center'>
-              <Button url='#' text='VER MÁS' dark />
+              <Button url='/experiencias/exp-4' text='VER MÁS' dark />
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function RadioD1 (): React.JSX.Element {
             </div>
 
             <div className='flex justify-center'>
-              <Button url='#' text='VER MÁS' dark />
+              <Button url='/experiencias/exp-7' text='VER MÁS' dark />
             </div>
           </div>
         </div>

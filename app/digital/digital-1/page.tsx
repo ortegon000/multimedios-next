@@ -81,7 +81,7 @@ function Digital (): React.JSX.Element {
             <div className='relative md:pb-24 mb-4 md:mb-0'>
               <p className='md:absolute text-center md:text-left text-xl -left-16'>El sitio de noticias <strong className='text-2xl'>#1 en México</strong></p>
             </div>
-            <NextImage src='/images/digital/d1-7.png' alt='' className='w-full' />
+            <NextImage src='/images/digital/d1-7.png' alt='' className='w-full bg-grayLight/50 backdrop-blur rounded-md' />
           </div>
         </div>
 
