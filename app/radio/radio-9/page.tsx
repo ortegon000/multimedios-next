@@ -22,15 +22,15 @@ export default function RadioD9 (): React.JSX.Element {
           images={[
             {
               image: '/images/radio/d99-cabina-1.png',
-              size: '30%'
+              size: 'w-[80%] md:w-[30%]'
             },
             {
               image: '/images/radio/d99-cabina-2.png',
-              size: '30%'
+              size: 'w-[80%] md:w-[40%]'
             },
             {
               image: '/images/radio/d99-cabina-3.png',
-              size: '30%'
+              size: 'w-[80%] md:w-[30%]'
             }
           ]}
         />

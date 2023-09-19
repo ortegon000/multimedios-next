@@ -14,7 +14,7 @@ export default function Component6 ({
 }): React.JSX.Element {
   return (
     <section className='mt-4 radio mx-auto max-w-4xl flex justify-end items-center px-4 md:px-0'>
-      <div className='md:w-7/12 w-full flex gap-4'>
+      <div className='md:w-7/12 w-full flex gap-4 bg-grayLight/50 backdrop-blur rounded-md p-2'>
         <div className='w-20 md:flex hidden'>
           <span className='flex justify-center items-center border border-grayDark bg-grayLight rounded-full w-20 h-20'>
             <NextImage src={logo} alt='' className='h-16 w-16 flex items-center' />

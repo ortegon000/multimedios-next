@@ -24,7 +24,7 @@ export default function Button ({
   return (
     <span>
       <Link
-        href={url} className={`${className} button group flex justify-center items-center py-1 px-4 rounded-3xl transition-all ${darkClass} ${backButtonClass}`}
+        href={url} className={`${className} button group flex justify-center items-center py-2 px-6 rounded-3xl transition-all ${darkClass} ${backButtonClass}`}
       >
         <span>{text}</span>
         <svg

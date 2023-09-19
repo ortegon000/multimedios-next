@@ -35,9 +35,9 @@ export default function Component7 ({ logo, images }: {
       </div>
 
       <div className='flex flex-col md:flex-row max-w-4xl mt-4 mx-auto justify-center items-center gap-4 px-4 md:px-0'>
-        {images.map((item, key) => (
+        {images.map((image, key) => (
           <div
-            className={`${translate} md:hover:scale-150 transition-all hover:z-50 w-3/4`}
+            className={`${translate} ${image.size} md:hover:scale-150 transition-all hover:z-50`}
             key={key}
             onMouseEnter={() => {
               handleMouseEnter(key)
@@ -45,9 +45,9 @@ export default function Component7 ({ logo, images }: {
           >
             <Atropos>
               <NextImage
-                src={item.image}
+                src={image.image}
                 alt=''
-                className='object-contain h-full w-full'
+                className=''
               />
             </Atropos>
           </div>

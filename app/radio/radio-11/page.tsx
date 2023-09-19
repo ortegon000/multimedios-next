@@ -22,15 +22,15 @@ export default function RadioD11 (): React.JSX.Element {
           images={[
             {
               image: '/images/radio/fmtu-cabina-1.png',
-              size: '30%'
+              size: 'w-[80%] md:w-[30%]'
             },
             {
               image: '/images/radio/fmtu-cabina-2.png',
-              size: '40%'
+              size: 'w-[80%] md:w-[40%]'
             },
             {
               image: '/images/radio/fmtu-cabina-3.png',
-              size: '30%'
+              size: 'w-[80%] md:w-[30%]'
             }
           ]}
         />
