@@ -34,7 +34,7 @@ function Col1 (): React.JSX.Element {
         heightFull
       />
 
-      <div className='card-info absolute top-10 right-4'>
+      <div className='card-info absolute top-6 right-4'>
         <span className='card-title text-white top-8 right-6 text-4xl font-bold block text-right'>
           58
         </span>
